@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/mine_text"
+            android:textColor="@color/black"
+            android:text="订单号:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/mine_text"
+            android:textColor="@color/gry"
+            android:text="2545454545"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/mine_text"
+            android:text="2016-11-9"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/mine_text"
+            android:text="订单内容"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="内容内容内容容内容内容内容"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+            <TextView
+                android:text="x1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/mine_text"
+                android:text="前台服务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/mine_text"
+                android:textColor="@color/blue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="完成"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/mine_text"
+                android:text="咨询师订单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/mine_text"
+                android:textColor="@color/blue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="完成"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/mine_text"
+                android:text="医疗订单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/mine_text"
+                android:textColor="@color/blue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="完成"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/mine_text"
+                android:text="跟踪回访"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/mine_text"
+                android:textColor="@color/blue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="完成"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

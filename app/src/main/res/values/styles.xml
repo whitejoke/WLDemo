@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <!--指向star_rating_bar_full.xml文件 -->
+        <item name="android:progressDrawable">@drawable/star_rating_bar_full</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+        <!-- 是否不支持用户交互，只应作为指标。 -->
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="Theme.ToolBar.right" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.right</item>
+    </style>
+
+    <style name="ActionButton.Overflow.right" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_launcher</item>
+    </style>
+
+
+</resources>

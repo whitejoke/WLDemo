@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hdit.wldemo.activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/tabhost"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/tab_home"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:text="@string/tab_hone"
+            android:textColor="@drawable/tab_text_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/tab_flow"
+            android:drawableTop="@drawable/tab_flow_selector"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="@string/tab_flow"
+            android:textColor="@drawable/tab_text_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/tab_mine"
+            android:drawableTop="@drawable/tab_mine_selector"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="@string/tab_mine"
+            android:textColor="@drawable/tab_text_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+</LinearLayout>

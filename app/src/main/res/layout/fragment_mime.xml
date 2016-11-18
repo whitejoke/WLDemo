@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@mipmap/mine_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/head_toolbar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/mine_head_back"
+                android:padding="25dp"
+                android:src="@mipmap/head_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingTop="25dp"
+                android:paddingBottom="45dp"
+                android:layout_toRightOf="@id/mine_head_back"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+                <TextView
+                    android:padding="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/mine_textSize"
+                    android:text="姓 名"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mine_text"
+                    android:text="积分: 1200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/mine_text"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/mine_text_bottom"
+                    android:text="一级客户"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/mine_head"
+                android:padding="30dp"
+                android:src="@mipmap/head_portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:padding="10dp"
+                android:src="@mipmap/uc_black_large"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/mine_infomation"
+        android:background="@color/white"
+        android:padding="@dimen/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/uc_black"
+        android:drawableLeft="@mipmap/mine_infomation"
+        android:drawablePadding="10dp"
+        android:text="个人信息"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/mine_medical_order"
+        android:background="@color/white"
+        android:padding="@dimen/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/uc_black"
+        android:drawableLeft="@mipmap/mine_order"
+        android:drawablePadding="10dp"
+        android:text="医疗订单"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/mine_counselor_order"
+        android:background="@color/white"
+        android:padding="@dimen/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/uc_black"
+        android:drawableLeft="@mipmap/mine_lishi"
+        android:drawablePadding="10dp"
+        android:text="历史治疗订单"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/mine_person_infomation"
+        android:background="@color/white"
+        android:padding="@dimen/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/uc_black"
+        android:drawableLeft="@mipmap/mine_look"
+        android:drawablePadding="10dp"
+        android:text="查看个人医疗资料"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/mine_share"
+        android:background="@color/white"
+        android:padding="@dimen/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/uc_black"
+        android:drawableLeft="@mipmap/mine_share"
+        android:drawablePadding="10dp"
+        android:text="分享薇琳APP"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/mine_error"
+        android:background="@color/white"
+        android:padding="@dimen/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/uc_black"
+        android:drawableLeft="@mipmap/mine_user"
+        android:drawablePadding="10dp"
+        android:text="用户反馈"/>
+</LinearLayout>
