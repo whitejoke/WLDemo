@@ -1,113 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/head_toolbar"/>
-    <android.support.v4.widget.SwipeRefreshLayout
+    <com.cjj.MaterialRefreshLayout
         android:id="@+id/srf_layout"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
-            android:background="@color/gry"
-            android:orientation="vertical"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <FrameLayout
-                android:id="@+id/galleryLayout"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:paddingLeft="0dp"
-                android:paddingRight="0dp">
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/viewPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"/>
-                <LinearLayout
-                    android:id="@+id/ll_point_ad"
-                    android:layout_width="match_parent"
-                    android:layout_height="18dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_marginRight="1dp"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal" >
-                </LinearLayout>
-            </FrameLayout>
             <LinearLayout
+                android:background="@color/gry"
                 android:orientation="vertical"
-                android:background="@color/white"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <Button
-                    android:layout_margin="10dp"
-                    android:background="@drawable/btn_login"
-                    android:text="免费注册会员"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:id="@+id/galleryLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btn_login" />
-                <TextView
-                    android:text="注册会员 掌握医疗进程 放心变美"
-                    android:paddingBottom="10dp"
-                    android:gravity="center"
+                    android:layout_height="180dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp">
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:rollviewpager_play_delay="3000"
+                        app:rollviewpager_hint_gravity="center"/>
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/ll_point_ad"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="18dp"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:layout_marginLeft="1dp"-->
+                        <!--android:layout_marginRight="1dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:orientation="horizontal" >-->
+                    <!--</LinearLayout>-->
+                </FrameLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_margin="10dp"
+                        android:background="@drawable/btn_login"
+                        android:text="免费注册会员"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_login" />
+                    <TextView
+                        android:text="注册会员 掌握医疗进程 放心变美"
+                        android:paddingBottom="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@mipmap/home_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="美容知识"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="bottom"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:text="美容护肤分享"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/orange"
+                        android:text="更多详情"
+                        android:gravity="right|center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:background="@color/white"
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
             </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-            <LinearLayout
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:padding="5dp"
-                    android:src="@mipmap/home_more"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:textSize="16sp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:text="美容知识"
-                    android:textColor="@color/orange"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:gravity="bottom"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="5dp"
-                    android:text="美容护肤分享"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:padding="5dp"
-                    android:textColor="@color/orange"
-                    android:text="更多详情"
-                    android:gravity="right|center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <com.hdit.wldemo.widget.MyRecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-            </com.hdit.wldemo.widget.MyRecyclerView>
-
-        </LinearLayout>
+        </ScrollView>
 
 
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </com.cjj.MaterialRefreshLayout>
 
 
 

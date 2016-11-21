@@ -1,6 +1,5 @@
 package com.hdit.wldemo.adapter;
 
-import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -40,10 +39,11 @@ public class HomeHeadAdapter extends BasePagerAdapter<HomeBean.ResultBean.DataBe
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(UIUtils.getActivity(), DetailActivity.class);
-                intent.putExtra("HeadNews",data.getContent());
-                UIUtils.getActivity().startActivity(intent);
+                DetailActivity.startIntent(data.getId(),data.getContent());
+//                Intent intent=new Intent();
+//                intent.setClass(UIUtils.getActivity(), DetailActivity.class);
+//                intent.putExtra("HeadNews",data.getContent());
+//                UIUtils.getActivity().startActivity(intent);
             }
         });
         return imageView;

@@ -123,10 +123,6 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Re
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
-
-        if (getItemViewType(position) == TYPE_FOOTER) {
-            return;
-        }
         final int pos = getRealPosition(holder);
         final T data = mDatas.get(position);
         if (data == null) {

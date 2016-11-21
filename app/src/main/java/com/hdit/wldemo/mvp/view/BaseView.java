@@ -36,9 +36,6 @@ public interface BaseView<T> {
 
         void netWorkError();
 
-        void hideProgress();
-
-        void showProgress();
     }
 
     interface LoginView extends BaseView<UserBean.ResultBean.DataBean>{}

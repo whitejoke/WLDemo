@@ -1,5 +1,6 @@
 package com.hdit.wldemo.mvp.presenter;
 
+import com.hdit.wldemo.activity.DetailActivity;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
 import com.hdit.wldemo.mvp.model.BaseDataBridge;
 import com.hdit.wldemo.mvp.model.BaseModel;
@@ -37,7 +38,7 @@ public class HomePresenterImpl extends BasePresenterImpl<BaseView.HomeView> impl
     }
 
     @Override
-    public void onClick(HomeBean info) {
-
+    public void onClick(HomeBean.ResultBean.DataBean.NewsBean info) {
+        DetailActivity.startIntent(info.getId(),info.getContent());
     }
 }

@@ -19,7 +19,7 @@ public interface BasePresenter {
     interface HomePresenter {
         void requestNetWork(int pageNum,int pageSize);
 
-        void onClick(HomeBean info);
+        void onClick(HomeBean.ResultBean.DataBean.NewsBean info);
     }
     interface LoginPresenter{
         void requestNetWork(Context context,Map<String, String> map);

@@ -55,6 +55,10 @@ public class LoginActivity extends BaseActivity implements BaseView.LoginView{
         intent.setClass(this,MainActivity.class);
         startActivity(intent);
     }
+    @OnClick(R.id.register)
+    public void register(){
+
+    }
     @Override
     protected int getLayoutId() {
         return R.layout.activity_login;

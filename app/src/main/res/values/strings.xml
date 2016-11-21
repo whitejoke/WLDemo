@@ -2,9 +2,11 @@
     <string name="app_name">WLDemo</string>
     <string name="login_name">输入用户名</string>
     <string name="login_password">输入密码</string>
+    <string name="register_email">输入邮箱</string>
     <string name="login_register">用户注册</string>
     <string name="login_forget">找回密码?</string>
     <string name="login">登 录</string>
+    <string name="register">注 册</string>
     <string name="share">分享到平台</string>
     <string name="tab_hone">首页</string>
     <string name="tab_flow">治疗流程</string>
@@ -23,4 +25,7 @@
     <string name="item_counselor">咨询师订单</string>
     <string name="item_medical">医疗订单</string>
     <string name="item_revisit">跟踪回访</string>
+
+    <string name="item_hufu">护肤保养</string>
+    <string name="see_detail">查看详情</string>
 </resources>
