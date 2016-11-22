@@ -1,6 +1,8 @@
 package com.hdit.wldemo.network;
 
 import com.hdit.wldemo.mvp.Bean.HomeBean;
+import com.hdit.wldemo.mvp.Bean.Member;
+import com.hdit.wldemo.mvp.Bean.RegisterBean;
 import com.hdit.wldemo.mvp.Bean.UserBean;
 
 import java.util.Map;
@@ -29,4 +31,10 @@ public interface WLApi {
 
     @GET(Api.GETNEWS)
     Observable<HomeBean> getNews(@Query("pageNum") int pageNum,@Query("pageSize") int pageSize);
+
+    @POST(Api.BUILDARCHIVE)
+    Observable<RegisterBean> postRegister(@QueryMap Map<String,String> map);
+
+    @GET(Api.GETUSERARCHIVE)
+    Observable<Member> getMember(@Query("userId") int userId);
 }

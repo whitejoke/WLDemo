@@ -10,13 +10,17 @@ import java.util.Map;
 
 public interface BaseModel<T> {
     void network(T model, Context context);
-//    interface HomeModel extends BaseModel<BaseDataBridge.HomeData> {
-//    }
 
     interface HomeModel {
         void netWorkNewList(int pageNum,int pageSize, BaseDataBridge.HomeData homeData);
     }
     interface LoginModel{
         void netWorkLogin(Context context, Map<String,String> map,BaseDataBridge.LoginData loginData);
+    }
+    interface RegisterModel{
+        void netWorkRegister(Map<String,String> map,BaseDataBridge.RegisterData registerData);
+    }
+    interface MemberModel{
+        void netWorkMember(int userId,BaseDataBridge.MemberData memberData);
     }
 }

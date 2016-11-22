@@ -26,6 +26,8 @@
         <activity android:name=".activity.MinePersonInfomation"/>
         <activity android:name=".activity.MinePostOrderActivity"/>
         <activity android:name=".activity.DetailActivity"/>
+        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".activity.SettingActivity"/>
     </application>
 
 </manifest>

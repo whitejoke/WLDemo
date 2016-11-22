@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/gry"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/head_toolbar"/>
     <LinearLayout
+        android:background="@color/gry"
         android:orientation="vertical"
         android:divider="@drawable/divider"
         android:showDividers="middle"
@@ -25,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/tv_cache"
                 android:text="125"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+                android:id="@+id/tv_del"
                 android:textColor="@color/black"
                 android:text="清理全部缓存"
                 android:padding="10dp"
@@ -57,6 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/tv_passwd_change"
                 android:padding="10dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -75,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/tv_phone"
                 android:text="138****8888"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -89,6 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="25dp" />
         <TextView
+            android:id="@+id/tv_login_out"
             android:padding="10dp"
             android:textSize="25sp"
             android:background="@color/white"

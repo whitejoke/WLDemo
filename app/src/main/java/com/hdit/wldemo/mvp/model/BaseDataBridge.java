@@ -1,6 +1,8 @@
 package com.hdit.wldemo.mvp.model;
 
 import com.hdit.wldemo.mvp.Bean.HomeBean;
+import com.hdit.wldemo.mvp.Bean.Member;
+import com.hdit.wldemo.mvp.Bean.RegisterBean;
 import com.hdit.wldemo.mvp.Bean.UserBean;
 
 import java.util.List;
@@ -17,5 +19,12 @@ public interface BaseDataBridge<T> {
         void error();
     }
     interface LoginData extends BaseDataBridge<UserBean.ResultBean.DataBean>{}
+
+    interface RegisterData{
+        void addData(RegisterBean datas);
+    }
+    interface MemberData{
+        void addData(Member datas);
+    }
 
 }

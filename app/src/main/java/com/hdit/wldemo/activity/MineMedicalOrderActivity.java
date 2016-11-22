@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hdit.wldemo.R;
+import com.hdit.wldemo.utils.ActivityUtils;
 
 import butterknife.Bind;
 
@@ -23,6 +24,12 @@ public class MineMedicalOrderActivity extends BaseActivity {
     ImageView toolbarRight;
     @Bind(R.id.toolbar_image)
     ImageView toolbarLeft;
+
+    public static void startIntent() {
+        Bundle bundle = new Bundle();
+        // bundle.putSerializable("user", userBean);
+        ActivityUtils.startActivity(MineMedicalOrderActivity.class, bundle);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

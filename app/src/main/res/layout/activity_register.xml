@@ -75,7 +75,7 @@
             android:id="@+id/register_email"
             android:padding="@dimen/login_text"
             android:drawablePadding="@dimen/login_text"
-            android:drawableLeft="@mipmap/login_password"
+            android:drawableLeft="@mipmap/register_email"
             android:background="@drawable/login_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_login" />
+            android:id="@+id/btn_register" />
 
 
     </LinearLayout>

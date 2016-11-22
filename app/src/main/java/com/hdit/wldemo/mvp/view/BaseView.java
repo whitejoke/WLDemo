@@ -1,6 +1,8 @@
 package com.hdit.wldemo.mvp.view;
 
 import com.hdit.wldemo.mvp.Bean.HomeBean;
+import com.hdit.wldemo.mvp.Bean.Member;
+import com.hdit.wldemo.mvp.Bean.RegisterBean;
 import com.hdit.wldemo.mvp.Bean.UserBean;
 
 import java.util.List;
@@ -39,5 +41,14 @@ public interface BaseView<T> {
     }
 
     interface LoginView extends BaseView<UserBean.ResultBean.DataBean>{}
+
+    interface RegisterView {
+        void setData(RegisterBean datas);
+        void netWorkError();
+    }
+    interface MemberView {
+        void setData(Member datas);
+        void netWorkError();
+    }
 
 }

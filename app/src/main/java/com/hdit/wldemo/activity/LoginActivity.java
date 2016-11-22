@@ -38,8 +38,8 @@ public class LoginActivity extends BaseActivity implements BaseView.LoginView{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         map=new HashMap<String, String>();
-        map.put("loginName","susu");
-        map.put("passwd","112233");
+        map.put("loginName","hbiner");
+        map.put("passwd","aaaaaa");
         init();
     }
 
@@ -57,7 +57,9 @@ public class LoginActivity extends BaseActivity implements BaseView.LoginView{
     }
     @OnClick(R.id.register)
     public void register(){
-
+        Intent intent=new Intent();
+        intent.setClass(this,RegisterActivity.class);
+        startActivity(intent);
     }
     @Override
     protected int getLayoutId() {

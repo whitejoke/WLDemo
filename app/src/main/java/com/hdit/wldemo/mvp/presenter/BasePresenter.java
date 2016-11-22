@@ -24,4 +24,10 @@ public interface BasePresenter {
     interface LoginPresenter{
         void requestNetWork(Context context,Map<String, String> map);
     }
+    interface RegisterPresenter{
+        void requestNeyWork(Map<String,String> map);
+    }
+    interface MemberPresenter{
+        void requestNeyWork(int userId);
+    }
 }

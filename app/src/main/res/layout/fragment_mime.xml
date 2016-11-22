@@ -132,6 +132,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="1dp" />
+
     <TextView
         android:id="@+id/mine_person_infomation"
         android:background="@color/white"
@@ -142,6 +143,7 @@
         android:drawableLeft="@mipmap/mine_look"
         android:drawablePadding="10dp"
         android:text="查看个人医疗资料"/>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp" />

@@ -6,6 +6,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hdit.wldemo.R;
+import com.hdit.wldemo.mvp.Bean.Member;
+import com.hdit.wldemo.utils.ActivityUtils;
+
+import java.io.Serializable;
 
 import butterknife.Bind;
 
@@ -24,10 +28,24 @@ public class MinePersonInfomation extends BaseActivity {
     @Bind(R.id.toolbar_image)
     ImageView toolbarLeft;
 
+    private Member member;
+    public static void startIntent(Member member) {
+        Bundle bundle = new Bundle();
+         bundle.putSerializable("member", (Serializable) member);
+        ActivityUtils.startActivity(MinePersonInfomation.class, bundle);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getBundle();
         init();
+    }
+    private void getBundle() {
+        Bundle bundle = getIntent().getExtras();
+        if (null != bundle && !bundle.isEmpty()) {
+            member = (Member) bundle.getSerializable("user");
+        }
     }
 
     private void init() {
