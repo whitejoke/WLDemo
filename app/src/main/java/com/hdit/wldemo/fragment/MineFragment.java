@@ -5,18 +5,24 @@ import android.content.SharedPreferences;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hdit.wldemo.R;
+import com.hdit.wldemo.activity.EvaluateActivity;
+import com.hdit.wldemo.activity.LoginActivity;
 import com.hdit.wldemo.activity.MineInfomationActivity;
 import com.hdit.wldemo.activity.MineMedicalOrderActivity;
 import com.hdit.wldemo.activity.MinePersonInfomation;
 import com.hdit.wldemo.activity.MinePostOrderActivity;
 import com.hdit.wldemo.activity.SettingActivity;
+import com.hdit.wldemo.constant.Constant;
 import com.hdit.wldemo.mvp.Bean.Member;
 import com.hdit.wldemo.mvp.presenter.BasePresenter;
 import com.hdit.wldemo.mvp.presenter.MemberPresenterImpl;
 import com.hdit.wldemo.mvp.view.BaseView;
+import com.hdit.wldemo.utils.LogUtils;
 import com.hdit.wldemo.utils.UIUtils;
 
 import butterknife.Bind;
@@ -49,11 +55,18 @@ public class MineFragment extends BaseFragment implements View.OnClickListener, 
     TextView mineShare;
     @Bind(R.id.mine_error)
     TextView mineError;
+    @Bind(R.id.user_head)
+    ImageView userHead;
+    @Bind(R.id.ll_login)
+    LinearLayout linearLayout;
+    @Bind(R.id.rl_login)
+    RelativeLayout relativeLayout;
 
     private BasePresenter.MemberPresenter memberPresenter;
     protected SharedPreferences sharedPreferences;
 
     private Member member;
+    private int userId;
 
     @Override
     protected View initView() {
@@ -68,6 +81,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener, 
         minePersonInfomation.setOnClickListener(this);
         mineShare.setOnClickListener(this);
         mineError.setOnClickListener(this);
+        userHead.setOnClickListener(this);
 
         toolbarRight.setOnClickListener(this);
 
@@ -77,11 +91,17 @@ public class MineFragment extends BaseFragment implements View.OnClickListener, 
         toolbarTitle.setTextColor(this.getResources().getColorStateList(R.color.white));
 
         memberPresenter=new MemberPresenterImpl(this);
+
         sharedPreferences=UIUtils.getActivity().getSharedPreferences("member",MODE_WORLD_READABLE);
-        int userId=sharedPreferences.getInt("id",0);
-
-        memberPresenter.requestNeyWork(userId);
-
+        userId=sharedPreferences.getInt("id",0);
+        if (userId==0){
+            linearLayout.setVisibility(View.VISIBLE);
+            relativeLayout.setVisibility(View.GONE);
+        }else {
+            linearLayout.setVisibility(View.GONE);
+            relativeLayout.setVisibility(View.VISIBLE);
+            memberPresenter.requestNeyWork(userId);
+        }
     }
 
     @Override
@@ -89,29 +109,94 @@ public class MineFragment extends BaseFragment implements View.OnClickListener, 
         Intent intent;
         switch (v.getId()){
             case R.id.mine_infomation:
-                MineInfomationActivity.startIntent(member);
+                if (userId==0){
+                    CheckUserId();
+                }else {
+                    MineInfomationActivity.startIntent(member);
+                }
                 break;
             case R.id.mine_medical_order:
-                MineMedicalOrderActivity.startIntent();
+                if (userId==0)
+                    CheckUserId();
+                else
+                    MineMedicalOrderActivity.startIntent();
                 break;
             case R.id.mine_counselor_order:
-                MinePostOrderActivity.startIntent();
+                if (userId==0)
+                    CheckUserId();
+                else
+                    MinePostOrderActivity.startIntent();
                 break;
             case R.id.mine_person_infomation:
-                MinePersonInfomation.startIntent(member);
+                if (userId==0)
+                    CheckUserId();
+                else
+                    MinePersonInfomation.startIntent(member);
                 break;
             case R.id.toolbar_right:
+                if (userId==0){
+                    intent=new Intent();
+                    intent.putExtra("userId",userId);
+                    intent.setClass(getActivity(), SettingActivity.class);
+                    startActivityForResult(intent,Constant.REQUESTCODE);
+                }else {
+                    intent=new Intent();
+                    intent.putExtra("userId",userId);
+                    intent.putExtra("telephone",member.getResult().getArchive().get(0).getCustoInfo().getTelphone());
+                    intent.setClass(getActivity(), SettingActivity.class);
+                    startActivityForResult(intent,Constant.REQUESTCODE);
+                }
+                break;
+            case R.id.mine_error:
                 intent=new Intent();
-                intent.setClass(getActivity(), SettingActivity.class);
+                intent.setClass(getActivity(), EvaluateActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.user_head:
+                intent=new Intent();
+                intent.setClass(getActivity(), LoginActivity.class);
+                startActivityForResult(intent, Constant.REQUESTCODE);
+                break;
         }
+    }
+
+    private void CheckUserId() {
+        Intent intent;
+        intent=new Intent();
+        intent.setClass(getActivity(), LoginActivity.class);
+        startActivityForResult(intent, Constant.REQUESTCODE);
     }
 
     @Override
     public void setData(Member datas) {
         member=new Member();
         member=datas;
-        //LogUtils.i("susu",member.getResult().getArchive().get(0).getCustoInfo().getUserName()+"55555");
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode==Constant.RESULTCODE){
+            onRefresh();
+        }else if (resultCode==Constant.RESULT_SETTING_CODE){
+            onRefresh();
+        }
+    }
+
+    private void onRefresh() {
+        memberPresenter=new MemberPresenterImpl(this);
+
+        sharedPreferences=UIUtils.getActivity().getSharedPreferences("member",MODE_WORLD_READABLE);
+        int userId=sharedPreferences.getInt("id",0);
+        LogUtils.i("susu", String.valueOf(userId)+"----------");
+        if (userId==0){
+            linearLayout.setVisibility(View.VISIBLE);
+            relativeLayout.setVisibility(View.GONE);
+        }else {
+            linearLayout.setVisibility(View.GONE);
+            relativeLayout.setVisibility(View.VISIBLE);
+            memberPresenter.requestNeyWork(userId);
+        }
     }
 
     @Override

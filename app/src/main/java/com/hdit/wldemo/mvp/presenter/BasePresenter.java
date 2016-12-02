@@ -17,7 +17,7 @@ public interface BasePresenter {
     }
 
     interface HomePresenter {
-        void requestNetWork(int pageNum,int pageSize);
+        void requestNetWork(Map<String,Integer> map);
 
         void onClick(HomeBean.ResultBean.DataBean.NewsBean info);
     }
@@ -29,5 +29,11 @@ public interface BasePresenter {
     }
     interface MemberPresenter{
         void requestNeyWork(int userId);
+    }
+    interface updatePasswd{
+        void requestNetWork(Map<String,String> map);
+    }
+    interface forgetPasswdPresenter{
+        void requestNetWork(Map<String,String> map);
     }
 }

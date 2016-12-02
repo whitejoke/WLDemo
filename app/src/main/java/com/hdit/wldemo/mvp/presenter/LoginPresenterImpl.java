@@ -8,7 +8,6 @@ import com.hdit.wldemo.mvp.model.BaseModel;
 import com.hdit.wldemo.mvp.model.LoginModelImpl;
 import com.hdit.wldemo.mvp.view.BaseView;
 
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -24,16 +23,10 @@ public class LoginPresenterImpl extends BasePresenterImpl<BaseView.LoginView> im
     }
 
     @Override
-    public void addData(List<UserBean.ResultBean.DataBean> datas) {
+    public void addData(UserBean datas) {
         view.setData(datas);
     }
 
-    @Override
-    public void error() {
-//        view.hideFoot();
-//        view.hideProgress();
-//        view.netWorkError();
-    }
 
     @Override
     public void requestNetWork(Context context,Map<String, String> map) {

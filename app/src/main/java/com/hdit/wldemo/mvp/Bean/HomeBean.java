@@ -8,7 +8,6 @@ import java.util.List;
 
 public class HomeBean {
 
-
     private int type;
     private String message;
     private Object msgDetail;

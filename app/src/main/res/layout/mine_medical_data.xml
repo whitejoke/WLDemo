@@ -14,27 +14,10 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
-            android:background="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textColor="@color/black"
-                android:text="用户名"
-                android:padding="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="Viilen slam Hu"
-                android:textColor="@color/gry"
-                android:gravity="right"
-                android:padding="10dp"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                />
-        </LinearLayout>
-        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -44,7 +27,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:background="@null"
+                android:id="@+id/member_truename"
                 android:text="张某某"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -55,6 +40,8 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -64,7 +51,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:background="@null"
+                android:id="@+id/member_age"
                 android:text="32岁"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -84,7 +73,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
             <TextView
+                android:id="@+id/member_birthday"
                 android:text="08 19"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -95,6 +86,8 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -104,7 +97,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:background="@null"
+                android:id="@+id/member_occupa"
                 android:text="经理"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -115,6 +110,8 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -124,7 +121,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:id="@+id/member_telephone"
+                android:background="@null"
                 android:text="13888888888"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -135,6 +134,8 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -144,7 +145,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:id="@+id/member_idnum"
+                android:background="@null"
                 android:text="330424111111111111"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -155,6 +158,8 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -164,7 +169,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:id="@+id/member_email"
+                android:background="@null"
                 android:text="823145526@qq.com"
                 android:textColor="@color/gry"
                 android:gravity="right"
@@ -175,6 +182,32 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="客户卡号"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@null"
+                android:id="@+id/member_usercardnum"
+                android:text="123456789220"
+                android:textColor="@color/gry"
+                android:gravity="right"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -184,7 +217,9 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:id="@+id/member_income"
+                android:background="@null"
                 android:text="2000"
                 android:textColor="@color/gry"
                 android:gravity="right"

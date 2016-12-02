@@ -20,6 +20,12 @@ public class Api {
     //档案列表
     public static final String GETUSERARCHIVE="common/getUserArchive.do";
 
+    //密码修改
+    public static final String UPDATEPASSWD="common/updatePasswd.do";
+
+    //找回密码
+    public static final String FORGETPASSWD="common/forgetPasswd.do";
+
     //员工管理
     public static final String UPDATEEMPLOYEE="employee/updateEmployee.do";
 

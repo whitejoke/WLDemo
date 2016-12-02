@@ -1,8 +1,9 @@
 package com.hdit.wldemo.mvp.view;
 
+import com.hdit.wldemo.mvp.Bean.ForgetPasswordBean;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
 import com.hdit.wldemo.mvp.Bean.Member;
-import com.hdit.wldemo.mvp.Bean.RegisterBean;
+import com.hdit.wldemo.mvp.Bean.PostNoBean;
 import com.hdit.wldemo.mvp.Bean.UserBean;
 
 import java.util.List;
@@ -16,13 +17,6 @@ public interface BaseView<T> {
 
     void netWorkError();
 
-    void hideProgress();
-
-    void showProgress();
-
-    void showFoot();
-
-    void hideFoot();
 
     interface MainView {
 
@@ -40,15 +34,24 @@ public interface BaseView<T> {
 
     }
 
-    interface LoginView extends BaseView<UserBean.ResultBean.DataBean>{}
+
+    interface LoginView{
+        void setData(UserBean datas);
+    }
 
     interface RegisterView {
-        void setData(RegisterBean datas);
+        void setData(PostNoBean datas);
         void netWorkError();
     }
     interface MemberView {
         void setData(Member datas);
         void netWorkError();
     }
-
+    interface updatePasswdView{
+        void setData(PostNoBean datas);
+        void netWorkError();
+    }
+    interface foegetPassword{
+        void setData(ForgetPasswordBean datas);
+    }
 }

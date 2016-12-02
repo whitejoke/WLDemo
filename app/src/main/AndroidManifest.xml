@@ -7,20 +7,25 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".activity.LoginActivity" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.hdit.task">
+        </activity>
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.MineInfomationActivity"/>
         <activity android:name=".activity.MineMedicalOrderActivity"/>
         <activity android:name=".activity.MinePersonInfomation"/>
@@ -28,6 +33,12 @@
         <activity android:name=".activity.DetailActivity"/>
         <activity android:name=".activity.RegisterActivity"/>
         <activity android:name=".activity.SettingActivity"/>
+        <activity android:name=".activity.CosmetologyActivity"/>
+        <activity android:name=".activity.EvaluateActivity"/>
+        <activity android:name=".activity.SettingPasswordActivity"/>
+        <activity android:name=".activity.ForgetPasswdActivity"/>
+        <activity android:name=".activity.ForgetPasswdNextActivity"/>
+        <activity android:name=".activity.ChangeTelephoneActivity"/>
     </application>
 
 </manifest>

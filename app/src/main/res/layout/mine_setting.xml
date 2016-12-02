@@ -68,6 +68,9 @@
                 android:drawablePadding="10dp"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_phone"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -78,8 +81,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:background="@null"
                 android:id="@+id/tv_phone"
-                android:text="138****8888"
                 android:textColor="@color/gry"
                 android:gravity="right"
                 android:padding="10dp"

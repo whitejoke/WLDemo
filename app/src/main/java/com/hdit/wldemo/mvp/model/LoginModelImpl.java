@@ -24,7 +24,7 @@ public class LoginModelImpl implements BaseModel.LoginModel {
             @Override
             public void onNext(UserBean userBean) {
                 super.onNext(userBean);
-                loginData.addData(userBean.getResult().getData());
+                loginData.addData(userBean);
             }
         });
     }

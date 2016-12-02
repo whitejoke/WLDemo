@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/gry">
     <FrameLayout
+        android:layout_marginTop="5dp"
         android:id="@+id/galleryLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="0dp"
-        android:paddingRight="0dp">
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/vp_ad"
+        android:layout_height="wrap_content">
+        <!--<com.jude.rollviewpager.RollPagerView-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="350dp"-->
+            <!--app:rollviewpager_play_delay="3000"-->
+            <!--app:rollviewpager_hint_gravity="center"-->
+            <!--android:background="@mipmap/cosmetology_img"/>-->
+        <ImageView
+            android:id="@+id/cosmetology_img"
+            android:src="@mipmap/cosmetology_img"
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:background="@mipmap/cosmetology_img"/>
-
-        <LinearLayout
-            android:id="@+id/ll_point_ad"
-            android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="3dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginRight="1dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal" >
-        </LinearLayout>
+            android:layout_height="330dp" />
     </FrameLayout>
 
     <RelativeLayout
         android:padding="10dp"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/cosmetology_type"
             android:layout_centerVertical="true"
             android:padding="5dp"
             android:text="@string/item_hufu"
@@ -69,11 +67,16 @@
             android:layout_height="wrap_content" />
     </RelativeLayout>
     <TextView
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:id="@+id/cosmetology_content"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+        android:paddingBottom="10dp"
         android:text="护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养护肤保养"
         android:layout_width="match_parent"
-        android:lineSpacingMultiplier="1.2"
+        android:lines="2"
+        android:ellipsize="end"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

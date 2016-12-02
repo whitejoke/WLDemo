@@ -1,23 +1,23 @@
 package com.hdit.wldemo.mvp.Bean;
 
 /**
- * Created by joker on 2016/11/22.
+ * Created by joker on 2016/11/25.
  */
 
-public class RegisterBean {
+public class ForgetPasswordBean {
 
     /**
      * type : 1
-     * message : success
+     * message : 验证邮件发送成功
      * msgDetail : null
-     * result : {"status":1}
+     * result : {"code":581962}
      */
 
     private int type;
     private String message;
     private Object msgDetail;
     /**
-     * status : 1
+     * code : 581962
      */
 
     private ResultBean result;
@@ -55,14 +55,14 @@ public class RegisterBean {
     }
 
     public static class ResultBean {
-        private int status;
+        private int code;
 
-        public int getStatus() {
-            return status;
+        public int getCode() {
+            return code;
         }
 
-        public void setStatus(int status) {
-            this.status = status;
+        public void setCode(int code) {
+            this.code = code;
         }
     }
 }

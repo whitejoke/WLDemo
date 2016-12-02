@@ -1,6 +1,6 @@
 package com.hdit.wldemo.mvp.presenter;
 
-import com.hdit.wldemo.mvp.Bean.RegisterBean;
+import com.hdit.wldemo.mvp.Bean.PostNoBean;
 import com.hdit.wldemo.mvp.model.BaseDataBridge;
 import com.hdit.wldemo.mvp.model.BaseModel;
 import com.hdit.wldemo.mvp.model.RegisterModelImpl;
@@ -21,7 +21,7 @@ public class RegisterPresenterImpl extends BasePresenterImpl<BaseView.RegisterVi
     }
 
     @Override
-    public void addData(RegisterBean datas) {
+    public void addData(PostNoBean datas) {
         view.setData(datas);
     }
 

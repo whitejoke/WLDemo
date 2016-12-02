@@ -147,10 +147,10 @@ public class Member {
                 private String uuid;
                 private String userName;
                 private Object userId;
-                private int age;
+                private String age;
                 private String birthday;
                 private String occupa;
-                private int sex;
+                private String sex;
                 private String telphone;
                 private String idNum;
                 private String email;
@@ -208,11 +208,11 @@ public class Member {
                     this.userId = userId;
                 }
 
-                public int getAge() {
+                public String getAge() {
                     return age;
                 }
 
-                public void setAge(int age) {
+                public void setAge(String age) {
                     this.age = age;
                 }
 
@@ -232,11 +232,11 @@ public class Member {
                     this.occupa = occupa;
                 }
 
-                public int getSex() {
+                public String getSex() {
                     return sex;
                 }
 
-                public void setSex(int sex) {
+                public void setSex(String sex) {
                     this.sex = sex;
                 }
 

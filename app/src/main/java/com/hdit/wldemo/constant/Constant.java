@@ -13,4 +13,10 @@ public class Constant {
 
     public static boolean BACK_EXIT = false;
 
+    public static final int REQUESTCODE=101;
+    public static final int RESULTCODE=102;
+    public static final int RESULT_SETTING_CODE=103;
+    public static final int TYPE=1000;
+
+
 }

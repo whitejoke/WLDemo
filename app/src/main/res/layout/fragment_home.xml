@@ -95,6 +95,7 @@
                         android:layout_weight="1"
                         android:layout_height="match_parent" />
                     <TextView
+                        android:id="@+id/home_more"
                         android:padding="5dp"
                         android:textColor="@color/orange"
                         android:text="更多详情"

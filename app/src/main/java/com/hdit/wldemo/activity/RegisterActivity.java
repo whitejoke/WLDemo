@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.hdit.wldemo.R;
-import com.hdit.wldemo.mvp.Bean.RegisterBean;
+import com.hdit.wldemo.mvp.Bean.PostNoBean;
 import com.hdit.wldemo.mvp.presenter.BasePresenter;
 import com.hdit.wldemo.mvp.presenter.RegisterPresenterImpl;
 import com.hdit.wldemo.mvp.view.BaseView;
@@ -64,7 +64,7 @@ public class RegisterActivity extends BaseActivity implements BaseView.RegisterV
     }
 
     @Override
-    public void setData(RegisterBean datas) {
+    public void setData(PostNoBean datas) {
 
     }
 

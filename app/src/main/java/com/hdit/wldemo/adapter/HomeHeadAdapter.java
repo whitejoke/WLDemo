@@ -40,10 +40,6 @@ public class HomeHeadAdapter extends BasePagerAdapter<HomeBean.ResultBean.DataBe
             @Override
             public void onClick(View v) {
                 DetailActivity.startIntent(data.getId(),data.getContent());
-//                Intent intent=new Intent();
-//                intent.setClass(UIUtils.getActivity(), DetailActivity.class);
-//                intent.putExtra("HeadNews",data.getContent());
-//                UIUtils.getActivity().startActivity(intent);
             }
         });
         return imageView;

@@ -12,7 +12,7 @@ public interface BaseModel<T> {
     void network(T model, Context context);
 
     interface HomeModel {
-        void netWorkNewList(int pageNum,int pageSize, BaseDataBridge.HomeData homeData);
+        void netWorkNewList(Map<String,Integer> map, BaseDataBridge.HomeData homeData);
     }
     interface LoginModel{
         void netWorkLogin(Context context, Map<String,String> map,BaseDataBridge.LoginData loginData);
@@ -22,5 +22,11 @@ public interface BaseModel<T> {
     }
     interface MemberModel{
         void netWorkMember(int userId,BaseDataBridge.MemberData memberData);
+    }
+    interface UpdatePasswdModel{
+        void netWorkUpdatePasswd(Map<String,String> map,BaseDataBridge.UpdataPasswdData updataPasswdData);
+    }
+    interface ForgetPasswdModel{
+        void netWorkForgetPasswd(Map<String,String> map,BaseDataBridge.ForgetPasswdData forgetPasswdData);
     }
 }

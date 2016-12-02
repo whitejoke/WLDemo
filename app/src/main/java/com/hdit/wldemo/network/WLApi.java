@@ -1,8 +1,9 @@
 package com.hdit.wldemo.network;
 
+import com.hdit.wldemo.mvp.Bean.ForgetPasswordBean;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
 import com.hdit.wldemo.mvp.Bean.Member;
-import com.hdit.wldemo.mvp.Bean.RegisterBean;
+import com.hdit.wldemo.mvp.Bean.PostNoBean;
 import com.hdit.wldemo.mvp.Bean.UserBean;
 
 import java.util.Map;
@@ -30,11 +31,17 @@ public interface WLApi {
     Observable<UserBean> getUserInfo(@QueryMap Map<String,String> map);
 
     @GET(Api.GETNEWS)
-    Observable<HomeBean> getNews(@Query("pageNum") int pageNum,@Query("pageSize") int pageSize);
+    Observable<HomeBean> getNews(@QueryMap Map<String,Integer> map);
 
     @POST(Api.BUILDARCHIVE)
-    Observable<RegisterBean> postRegister(@QueryMap Map<String,String> map);
+    Observable<PostNoBean> postRegister(@QueryMap Map<String,String> map);
 
     @GET(Api.GETUSERARCHIVE)
     Observable<Member> getMember(@Query("userId") int userId);
+
+    @POST(Api.UPDATEPASSWD)
+    Observable<PostNoBean> postUpdatePasswd(@QueryMap Map<String,String> map);
+
+    @POST(Api.FORGETPASSWD)
+    Observable<ForgetPasswordBean> postForgetPasswd(@QueryMap Map<String,String> map);
 }

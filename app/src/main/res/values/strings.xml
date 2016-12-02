@@ -28,4 +28,15 @@
 
     <string name="item_hufu">护肤保养</string>
     <string name="see_detail">查看详情</string>
+
+    <string name="old_password">请输入旧密码</string>
+    <string name="new_password">请输入新密码</string>
+    <string name="find_password">请输入邮箱</string>
+    <string name="find_code">请输入验证码</string>
+    <string name="et_phone">请输入手机号</string>
+    <string name="btn_password">修改密码</string>
+    <string name="btn_find">下一步</string>
+    <string name="btn_change">确认密码</string>
+    <string name="btn_phone">确认修改</string>
+    <string name="check_login">点击登录</string>
 </resources>

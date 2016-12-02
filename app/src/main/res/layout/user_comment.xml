@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/gry"
     android:layout_width="match_parent"
@@ -17,10 +18,18 @@
             android:text="对该环节的评价"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <RatingBar
-            style="@style/foodRatingBar"
+        <com.hdit.wldemo.widget.RatingBarView
+            android:id="@+id/custom_ratingbar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:starCount="5"
+            app:starEmpty="@mipmap/comment_unchoose"
+            app:starFill="@mipmap/comment_choose"
+            app:starImageSize="50dp"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
     </LinearLayout>
 
 </LinearLayout>

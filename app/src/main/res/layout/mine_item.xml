@@ -18,13 +18,14 @@
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
+            <com.hdit.wldemo.widget.RoundImageView
+                android:id="@+id/member_head"
                 android:padding="10dp"
-                android:layout_alignParentLeft="true"
                 android:src="@mipmap/user_head"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
             <TextView
+                android:id="@+id/member_head_change"
                 android:textColor="@color/blue"
                 android:padding="10dp"
                 android:layout_centerVertical="true"
@@ -37,6 +38,8 @@
             android:layout_width="match_parent"
             android:layout_height="10dp" />
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -45,7 +48,8 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:background="@null"
                 android:id="@+id/member_name"
                 android:text="Viilen slam Hu"
                 android:textColor="@color/black"
@@ -79,6 +83,8 @@
                 android:drawablePadding="10dp"/>
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -87,7 +93,8 @@
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
+            <EditText
+                android:background="@null"
                 android:id="@+id/member_phone"
                 android:text="13888888888"
                 android:textColor="@color/black"
@@ -100,6 +107,8 @@
                 android:drawablePadding="10dp"/>
         </LinearLayout>
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -109,8 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <TextView
-
+            <EditText
+                android:background="@null"
                 android:text="宁波 鄞州"
                 android:textColor="@color/black"
                 android:gravity="right"

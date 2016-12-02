@@ -7,6 +7,8 @@ import com.hdit.wldemo.mvp.model.BaseModel;
 import com.hdit.wldemo.mvp.model.HomeModelImpl;
 import com.hdit.wldemo.mvp.view.BaseView;
 
+import java.util.Map;
+
 /**
  * Created by joker on 2016/11/11.
  */
@@ -33,8 +35,8 @@ public class HomePresenterImpl extends BasePresenterImpl<BaseView.HomeView> impl
 
 
     @Override
-    public void requestNetWork(int pageNum, int pageSize) {
-        homeModel.netWorkNewList(pageNum,pageSize,this);
+    public void requestNetWork(Map<String,Integer> map) {
+        homeModel.netWorkNewList(map,this);
     }
 
     @Override

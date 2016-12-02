@@ -79,12 +79,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         sharedPreferences.edit().clear().commit();
     }
 
-    public String Data() {
-        String content;
-        SharedPreferences sharedPreferences = getSharedPreferences("member",MODE_WORLD_READABLE);
-        content = sharedPreferences.getString("id", "");
-        return content;
-    }
 
     @Override
     protected void onDestroy() {
