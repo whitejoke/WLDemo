@@ -1,10 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gry"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/head_toolbar"/>
-    <TextView
-        android:text="治疗流程"
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/srf_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/gry">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:text="王某某"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true" />
+                    <LinearLayout
+                        android:layout_below="@id/tv_name"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18sp"
+                            android:padding="10dp"
+                            android:text="性别:"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="18sp"
+                            android:padding="10dp"
+                            android:text="男"
+                            android:textColor="@color/gry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_value"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:text="二级会员"
+                        android:textColor="@color/gry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                    <LinearLayout
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_value">
+                        <TextView
+                            android:textSize="18sp"
+                            android:padding="10dp"
+                            android:text="手机:"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="18sp"
+                            android:padding="10dp"
+                            android:text="18368493691"
+                            android:textColor="@color/gry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <include layout="@layout/item_prosceniun"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <include layout="@layout/item_counselor_order"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <include layout="@layout/item_medical_order"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <include layout="@layout/item_revisit"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.cjj.MaterialRefreshLayout>
 </LinearLayout>

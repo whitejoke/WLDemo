@@ -26,6 +26,11 @@ public class RegisterPresenterImpl extends BasePresenterImpl<BaseView.RegisterVi
     }
 
     @Override
+    public void error() {
+        view.netWorkError();
+    }
+
+    @Override
     public void requestNeyWork(Map<String, String> map) {
         registerModel.netWorkRegister(map,this);
     }

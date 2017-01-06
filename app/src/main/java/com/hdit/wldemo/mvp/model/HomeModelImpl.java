@@ -18,6 +18,7 @@ public class HomeModelImpl implements BaseModel.HomeModel{
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
+                homeData.error();
             }
 
             @Override

@@ -26,6 +26,11 @@ public class ForgetPasswdPresenterImpl extends BasePresenterImpl<BaseView.foeget
     }
 
     @Override
+    public void error() {
+        view.netWorkError();
+    }
+
+    @Override
     public void requestNetWork(Map<String, String> map) {
         forgetPasswdModel.netWorkForgetPasswd(map,this);
     }

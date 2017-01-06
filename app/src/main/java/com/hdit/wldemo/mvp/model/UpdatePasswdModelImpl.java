@@ -17,6 +17,7 @@ public class UpdatePasswdModelImpl implements BaseModel.UpdatePasswdModel {
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
+                updataPasswdData.error();
             }
 
             @Override

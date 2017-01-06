@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/apply_of_name"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="优惠申请人"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@id/apply_of_name"
+            android:padding="5dp"
+            android:text="咨询师一号"
+            android:textSize="18sp"
+            android:textColor="@color/gry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/apply_creattime"
+            android:layout_gravity="right|center_vertical"
+            android:padding="5dp"
+            android:text="2016-12-23 13:54:54"
+            android:textSize="16sp"
+            android:textColor="@color/gry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="申请优惠订单详情:"
+                android:textSize="18sp"
+                android:textColor="@color/gry"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/apply_preferStatus"
+                android:layout_gravity="right"
+                android:padding="5dp"
+                android:text="未处理"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="申请状态:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/apply_preferStatus_bottom"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="申请中"
+            android:textSize="18sp"
+            android:textColor="@color/orange"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/apply_button"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="去审批"
+            android:layout_gravity="right"
+            android:background="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

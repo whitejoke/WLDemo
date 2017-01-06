@@ -8,7 +8,7 @@ import com.hdit.wldemo.R;
  * Created by joker on 2016/11/30.
  */
 
-public class ChangeTelephoneActivity extends BaseActivity {
+public class ChangeTelephoneActivity extends BaseNewActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

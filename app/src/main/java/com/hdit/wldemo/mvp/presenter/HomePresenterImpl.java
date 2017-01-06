@@ -43,4 +43,5 @@ public class HomePresenterImpl extends BasePresenterImpl<BaseView.HomeView> impl
     public void onClick(HomeBean.ResultBean.DataBean.NewsBean info) {
         DetailActivity.startIntent(info.getId(),info.getContent());
     }
+
 }

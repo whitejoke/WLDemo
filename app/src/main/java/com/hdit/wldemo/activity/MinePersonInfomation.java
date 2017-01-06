@@ -1,21 +1,28 @@
 package com.hdit.wldemo.activity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hdit.wldemo.R;
-import com.hdit.wldemo.mvp.Bean.Member;
-import com.hdit.wldemo.utils.ActivityUtils;
+import com.hdit.wldemo.constant.Constant;
+import com.hdit.wldemo.mvp.Bean.PostNoBean;
+import com.hdit.wldemo.mvp.presenter.BasePresenter;
+import com.hdit.wldemo.mvp.presenter.RegisterPresenterImpl;
+import com.hdit.wldemo.mvp.view.BaseView;
 
 import java.lang.reflect.Field;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.Bind;
 
@@ -23,7 +30,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/17.
  */
 
-public class MinePersonInfomation extends BaseActivity implements View.OnClickListener {
+public class MinePersonInfomation extends BaseNewActivity implements View.OnClickListener, BaseView.RegisterView {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -52,6 +59,8 @@ public class MinePersonInfomation extends BaseActivity implements View.OnClickLi
     EditText memberUserCardNum;
     @Bind(R.id.member_income)
     EditText memberIncome;
+    @Bind(R.id.btn_save)
+    Button btnSave;
 
 
     private String member_truename;
@@ -63,34 +72,15 @@ public class MinePersonInfomation extends BaseActivity implements View.OnClickLi
     private String member_email;
     private String member_usercardnum;
     private String member_income;
+    private int member_id;
 
     private Calendar calendar;
     private int year;
     private int month;
     private int day;
+    private boolean error=false;
 
-    public static void startIntent(Member member) {
-        Bundle bundle = new Bundle();
-        bundle.putString("memberTrueName",
-                member.getResult().getArchive().get(0).getCustoInfo().getUuid()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getUuid());
-        bundle.putString("memberAge",
-                member.getResult().getArchive().get(0).getCustoInfo().getAge()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getAge());
-        bundle.putString("memberBirthday",
-                member.getResult().getArchive().get(0).getCustoInfo().getBirthday()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getBirthday());
-        bundle.putString("memberOccupa",
-                member.getResult().getArchive().get(0).getCustoInfo().getOccupa()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getOccupa());
-        bundle.putString("memberTelephone",
-                member.getResult().getArchive().get(0).getCustoInfo().getTelphone()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getTelphone());
-        bundle.putString("memberIdnum",
-                member.getResult().getArchive().get(0).getCustoInfo().getIdNum()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getIdNum());
-        bundle.putString("memberEmail",
-                member.getResult().getArchive().get(0).getCustoInfo().getEmail()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getEmail());
-        bundle.putString("memberUserCard",
-                member.getResult().getArchive().get(0).getCustoInfo().getUserCardNum()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getUserCardNum());
-        bundle.putString("memberIncome",
-                member.getResult().getArchive().get(0).getCustoInfo().getIncome()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getIncome());
-        ActivityUtils.startActivity(MinePersonInfomation.class, bundle);
-    }
+    private BasePresenter.RegisterPresenter registerPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +91,7 @@ public class MinePersonInfomation extends BaseActivity implements View.OnClickLi
     private void getBundle() {
         Bundle bundle = getIntent().getExtras();
         if (null != bundle && !bundle.isEmpty()) {
+            member_id=bundle.getInt("memberId");
             member_truename = bundle.getString("memberTrueName");
             member_age = bundle.getString("memberAge");
             member_birthday = bundle.getString("memberBirthday");
@@ -117,8 +108,18 @@ public class MinePersonInfomation extends BaseActivity implements View.OnClickLi
         toolbarTitle.setText("个人医疗资料");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        registerPresenter=new RegisterPresenterImpl(this);
+
         showView();
         memberBirthday.setOnClickListener(this);
+        btnSave.setOnClickListener(this);
     }
 
     private void showView() {
@@ -174,6 +175,20 @@ public class MinePersonInfomation extends BaseActivity implements View.OnClickLi
                         ((View) yearPicker).setVisibility(View.GONE);
                     }
                 }
+                break;
+            case R.id.btn_save:
+                Map<String,String> map=new HashMap<>();
+                map.put("id", String.valueOf(member_id));
+                map.put("custoInfo.age",memberAge.getText().toString());
+                map.put("custoInfo.birthday",memberBirthday.getText().toString());
+                map.put("custoInfo.occupa",memberOccupa.getText().toString());
+                map.put("custoInfo.telphone",memberTelephone.getText().toString());
+                map.put("custoInfo.idNum",memberIdNum.getText().toString());
+                map.put("custoInfo.email",memberEmail.getText().toString());
+                map.put("custoInfo.userCardNum",memberUserCardNum.getText().toString());
+                map.put("custoInfo.income",memberIncome.getText().toString());
+                registerPresenter.requestNeyWork(map);
+
         }
     }
     private DatePicker findDatePicker(ViewGroup group) {
@@ -190,5 +205,23 @@ public class MinePersonInfomation extends BaseActivity implements View.OnClickLi
             }
         }
         return null;
+    }
+
+    @Override
+    public void setData(PostNoBean datas) {
+        if (error){
+            Toast("出错啦");
+        }else {
+            Intent intent=new Intent();
+            setResult(Constant.RESULTCODE,intent);
+            finish();
+        }
+
+    }
+
+    @Override
+    public void netWorkError() {
+        error=true;
+        Toast("网络错误");
     }
 }

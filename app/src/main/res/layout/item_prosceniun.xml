@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:divider="@drawable/divider"
     android:showDividers="middle"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -19,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/proscenium_createTime"
             android:text="创建时间:2016-11-14 11:00"
             android:gravity="right"
             android:layout_width="0dp"
@@ -64,12 +66,13 @@
                     android:paddingTop="10dp"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:text="服务人员:"
+                    android:text="员工工号:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
+                    android:id="@+id/proscenium_positionId"
                     android:padding="10dp"
-                    android:text="张三三"
+                    android:text="542842254"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -107,12 +110,13 @@
                     android:paddingTop="10dp"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:text="服务人员:"
+                    android:text="服务状态:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:padding="10dp"
-                    android:text="张三三"
+                    android:text="完成服务"
+                    android:textColor="@color/blue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -138,6 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/proscenium_comment"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="完成"
@@ -155,6 +160,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/proscenium_advice"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="张三三咨询师"

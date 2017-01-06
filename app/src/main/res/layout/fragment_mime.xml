@@ -32,12 +32,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="left">
                 <TextView
+                    android:id="@+id/head_name"
                     android:padding="5dp"
                     android:gravity="left"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="@dimen/mine_textSize"
-                    android:text="姓 名"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -48,7 +48,7 @@
                     android:text="积分: 1200"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView2" />
+                    android:id="@+id/head_code" />
 
                 <TextView
                     android:layout_marginLeft="5dp"
@@ -64,7 +64,7 @@
                     android:text="一级客户"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView" />
+                    android:id="@+id/head_value" />
             </LinearLayout>
 
             <ImageView
@@ -110,56 +110,94 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp" />
-    <TextView
-        android:id="@+id/mine_infomation"
-        android:background="@color/white"
-        android:padding="@dimen/login_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@mipmap/uc_black"
-        android:drawableLeft="@mipmap/mine_infomation"
-        android:drawablePadding="10dp"
-        android:text="个人信息"/>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="1dp" />
-    <TextView
-        android:id="@+id/mine_medical_order"
-        android:background="@color/white"
-        android:padding="@dimen/login_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@mipmap/uc_black"
-        android:drawableLeft="@mipmap/mine_order"
-        android:drawablePadding="10dp"
-        android:text="医疗订单"/>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="1dp" />
-    <TextView
-        android:id="@+id/mine_counselor_order"
-        android:background="@color/white"
-        android:padding="@dimen/login_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@mipmap/uc_black"
-        android:drawableLeft="@mipmap/mine_lishi"
-        android:drawablePadding="10dp"
-        android:text="历史治疗订单"/>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="1dp" />
 
-    <TextView
-        android:id="@+id/mine_person_infomation"
-        android:background="@color/white"
-        android:padding="@dimen/login_text"
+    <LinearLayout
+        android:id="@+id/ll_emp"
+        android:orientation="vertical"
+        android:visibility="visible"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@mipmap/uc_black"
-        android:drawableLeft="@mipmap/mine_look"
-        android:drawablePadding="10dp"
-        android:text="查看个人医疗资料"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mine_emp_infomation"
+            android:background="@color/white"
+            android:padding="@dimen/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/uc_black"
+            android:drawableLeft="@mipmap/mine_infomation"
+            android:drawablePadding="10dp"
+            android:text="个人信息"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/mine_apply"
+            android:background="@color/white"
+            android:padding="@dimen/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/uc_black"
+            android:drawableLeft="@mipmap/mine_apply"
+            android:drawablePadding="10dp"
+            android:text="优惠申请"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mine_infomation"
+            android:background="@color/white"
+            android:padding="@dimen/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/uc_black"
+            android:drawableLeft="@mipmap/mine_infomation"
+            android:drawablePadding="10dp"
+            android:text="个人信息"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/mine_medical_order"
+            android:background="@color/white"
+            android:padding="@dimen/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/uc_black"
+            android:drawableLeft="@mipmap/mine_order"
+            android:drawablePadding="10dp"
+            android:text="医疗订单"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/mine_counselor_order"
+            android:background="@color/white"
+            android:padding="@dimen/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/uc_black"
+            android:drawableLeft="@mipmap/mine_lishi"
+            android:drawablePadding="10dp"
+            android:text="历史治疗订单"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/mine_person_infomation"
+            android:background="@color/white"
+            android:padding="@dimen/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/uc_black"
+            android:drawableLeft="@mipmap/mine_look"
+            android:drawablePadding="10dp"
+            android:text="查看个人医疗资料"/>
+    </LinearLayout>
 
     <Space
         android:layout_width="match_parent"

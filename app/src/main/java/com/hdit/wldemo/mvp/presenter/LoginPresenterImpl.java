@@ -27,6 +27,11 @@ public class LoginPresenterImpl extends BasePresenterImpl<BaseView.LoginView> im
         view.setData(datas);
     }
 
+    @Override
+    public void error() {
+        view.netWorkError();
+    }
+
 
     @Override
     public void requestNetWork(Context context,Map<String, String> map) {

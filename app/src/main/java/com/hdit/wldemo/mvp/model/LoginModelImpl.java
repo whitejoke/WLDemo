@@ -19,12 +19,16 @@ public class LoginModelImpl implements BaseModel.LoginModel {
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
+                loginData.error();
             }
 
             @Override
             public void onNext(UserBean userBean) {
                 super.onNext(userBean);
-                loginData.addData(userBean);
+                if (userBean.getType()==-1){
+                    loginData.error();
+                }else
+                    loginData.addData(userBean);
             }
         });
     }

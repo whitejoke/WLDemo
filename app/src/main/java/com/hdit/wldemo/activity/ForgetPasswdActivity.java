@@ -26,7 +26,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/25.
  */
 
-public class ForgetPasswdActivity extends BaseActivity implements BaseView.foegetPassword{
+public class ForgetPasswdActivity extends BaseNewActivity implements BaseView.foegetPassword{
     @Bind(R.id.find_password)
     EditText findPassword;
     @Bind(R.id.btn_find)
@@ -56,6 +56,12 @@ public class ForgetPasswdActivity extends BaseActivity implements BaseView.foege
         toolbarTitle.setText("找回密码");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         forgetPasswdPresenter=new ForgetPasswdPresenterImpl(this);
         btnFind.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +89,11 @@ public class ForgetPasswdActivity extends BaseActivity implements BaseView.foege
         this.type=datas.getType();
         this.message=datas.getMessage();
         nextDo();
+    }
+
+    @Override
+    public void netWorkError() {
+        Toast("网络异常");
     }
 
     private void nextDo() {

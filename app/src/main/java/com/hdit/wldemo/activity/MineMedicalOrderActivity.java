@@ -2,6 +2,7 @@ package com.hdit.wldemo.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,7 +15,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/17.
  */
 
-public class MineMedicalOrderActivity extends BaseActivity {
+public class MineMedicalOrderActivity extends BaseNewActivity {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -41,6 +42,13 @@ public class MineMedicalOrderActivity extends BaseActivity {
         toolbarTitle.setText("医疗订单");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
     @Override

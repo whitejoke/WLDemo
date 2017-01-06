@@ -159,7 +159,7 @@ public class UserBean implements Serializable{
                 private String birthday;
                 private Object occupa;
                 private Object sex;
-                private Object telphone;
+                private String telphone;
                 private Object idNum;
                 private Object email;
                 private Object chat;
@@ -248,11 +248,11 @@ public class UserBean implements Serializable{
                     this.sex = sex;
                 }
 
-                public Object getTelphone() {
+                public String getTelphone() {
                     return telphone;
                 }
 
-                public void setTelphone(Object telphone) {
+                public void setTelphone(String telphone) {
                     this.telphone = telphone;
                 }
 

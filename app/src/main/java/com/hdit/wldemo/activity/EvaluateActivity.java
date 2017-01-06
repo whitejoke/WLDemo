@@ -12,7 +12,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/24.
  */
 
-public class EvaluateActivity extends BaseActivity {
+public class EvaluateActivity extends BaseNewActivity {
 
     @Bind(R.id.custom_ratingbar)
     RatingBarView ratingBarView;

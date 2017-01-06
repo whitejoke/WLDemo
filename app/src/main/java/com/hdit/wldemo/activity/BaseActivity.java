@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.hdit.wldemo.mvp.Bean.UserForEmp;
 import com.hdit.wldemo.mvp.Bean.UserBean;
 import com.hdit.wldemo.utils.ActivityCollector;
 import com.hdit.wldemo.utils.LogUtils;
@@ -68,10 +69,19 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected abstract int getLayoutId();
 
-    protected void setMemberSharedPreference(List<UserBean.ResultBean.DataBean> result) {
+    protected void setMemberSharedPreference(List<UserBean.ResultBean.DataBean> result,boolean ischeck) {
         clearData();
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt("id", result.get(0).getId());
+        editor.putBoolean("isChecked",ischeck);
+        editor.putString("phone",result.get(0).getCustoInfo().getTelphone());
+        editor.commit();
+    }
+    protected void setMemberForEmpSharedPreference(UserForEmp.ResultBean.DataBean result,boolean ischeck) {
+        clearData();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("id",result.getId());
+        editor.putBoolean("isChecked",ischeck);
         editor.commit();
     }
 

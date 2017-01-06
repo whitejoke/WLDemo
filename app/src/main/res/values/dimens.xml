@@ -8,4 +8,5 @@
     <dimen name="mine_text">16sp</dimen>
     <dimen name="mine_text_bottom">12sp</dimen>
     <dimen name="mine_textPadding">12dp</dimen>
+    <dimen name="space">10dp</dimen>
 </resources>

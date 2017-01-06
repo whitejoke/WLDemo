@@ -55,7 +55,7 @@
                         android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btn_login" />
+                        android:id="@+id/btn_register" />
                     <TextView
                         android:text="注册会员 掌握医疗进程 放心变美"
                         android:paddingBottom="10dp"

@@ -25,6 +25,7 @@ public class HomeHeadAdapter extends BasePagerAdapter<HomeBean.ResultBean.DataBe
 
     @Override
     protected Object instantiate(ViewGroup container, final int position, final HomeBean.ResultBean.DataBean.AdvertBean data) {
+        //container.removeAllViews();
         final ImageView imageView = new ImageView(UIUtils.getContext());
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         ImageLoaderUtils.display(UIUtils.getActivity(), imageView, data.getImageUrl());

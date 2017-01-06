@@ -17,6 +17,7 @@ public class ForgetPasswdModelImpl implements BaseModel.ForgetPasswdModel {
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
+                forgetPasswdData.error();
             }
 
             @Override

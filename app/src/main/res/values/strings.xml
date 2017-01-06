@@ -10,6 +10,7 @@
     <string name="share">分享到平台</string>
     <string name="tab_hone">首页</string>
     <string name="tab_flow">治疗流程</string>
+    <string name="tab_business">业务处理</string>
     <string name="tab_mine">我的</string>
     <string name="loading">加载中</string>
 
@@ -38,5 +39,6 @@
     <string name="btn_find">下一步</string>
     <string name="btn_change">确认密码</string>
     <string name="btn_phone">确认修改</string>
+    <string name="btn_save">确认保存</string>
     <string name="check_login">点击登录</string>
 </resources>

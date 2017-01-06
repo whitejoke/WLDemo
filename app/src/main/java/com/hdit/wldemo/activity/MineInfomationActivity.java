@@ -12,11 +12,13 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -24,8 +26,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hdit.wldemo.R;
-import com.hdit.wldemo.mvp.Bean.Member;
-import com.hdit.wldemo.utils.ActivityUtils;
+import com.hdit.wldemo.constant.Constant;
+import com.hdit.wldemo.mvp.Bean.PostNoBean;
+import com.hdit.wldemo.mvp.presenter.BasePresenter;
+import com.hdit.wldemo.mvp.presenter.RegisterPresenterImpl;
+import com.hdit.wldemo.mvp.view.BaseView;
 import com.hdit.wldemo.utils.SelectPicPopupWindow;
 import com.hdit.wldemo.utils.SelectSexPopupWindow;
 import com.hdit.wldemo.widget.WheelView;
@@ -41,7 +46,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import butterknife.Bind;
 
@@ -49,7 +56,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/17.
  */
 
-public class MineInfomationActivity extends BaseActivity implements View.OnClickListener {
+public class MineInfomationActivity extends BaseNewActivity implements View.OnClickListener, BaseView.RegisterView {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -74,6 +81,8 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
     ImageView memberHead;
     @Bind(R.id.member_head_change)
     TextView memberHeadChange;
+    @Bind(R.id.btn_save)
+    Button btnSave;
 
 
 
@@ -82,6 +91,8 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
     private String member_telephone;
     private String member_address;
     private String member_birthday;
+    private String member_id;
+    private int mapSex=1;
 
     private SelectPicPopupWindow popWindow;
     private SelectSexPopupWindow sex_popupWindow;
@@ -97,20 +108,7 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
     private int month;
     private int day;
 
-    public static void startIntent(Member member) {
-        Bundle bundle = new Bundle();
-        bundle.putString("memberName",
-                member.getResult().getArchive().get(0).getCustoInfo().getUserName()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getUserName());
-        bundle.putString("memberSex",
-                member.getResult().getArchive().get(0).getCustoInfo().getSex()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getSex());
-        bundle.putString("memberTelephone",
-                member.getResult().getArchive().get(0).getCustoInfo().getTelphone()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getTelphone());
-        bundle.putString("memberAddress",
-                member.getResult().getArchive().get(0).getCustoInfo().getAddress()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getAddress());
-        bundle.putString("memberBirthday",
-                member.getResult().getArchive().get(0).getCustoInfo().getBirthday()==null?null:member.getResult().getArchive().get(0).getCustoInfo().getBirthday());
-        ActivityUtils.startActivity(MineInfomationActivity.class, bundle);
-    }
+    private BasePresenter.RegisterPresenter registerPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,6 +127,7 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
             member_telephone=bundle.getString("memberTelephone");
             member_address=bundle.getString("memberAddress");
             member_birthday=bundle.getString("memberBirthday");
+            member_id=bundle.getString("memberId");
         }
     }
 
@@ -136,9 +135,25 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
         toolbarTitle.setText("个人信息");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        registerPresenter=new RegisterPresenterImpl(this);
+
         memberHeadChange.setOnClickListener(this);
         memberBirthday.setOnClickListener(this);
         memberSex.setOnClickListener(this);
+        btnSave.setOnClickListener(this);
         showView();
     }
 
@@ -216,6 +231,20 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
                         .setView(outerView)
                         .setPositiveButton("OK", null)
                         .create().show();
+                break;
+            case R.id.btn_save:
+                if (TextUtils.equals(member_sex,"男")){
+                    mapSex=1;
+                }else if (TextUtils.equals(member_sex,"女")){
+                    mapSex=0;
+                }
+                Map<String,String> map=new HashMap<>();
+                map.put("id",member_id);
+                map.put("custoInfo.sex", String.valueOf(mapSex));
+                map.put("custoInfo.telphone",memberPhone.getText().toString());
+                map.put("custoInfo.address",memberAddress.getText().toString());
+                map.put("custoInfo.birthday",memberBirthday.getText().toString());
+                registerPresenter.requestNeyWork(map);
         }
 
     }
@@ -333,5 +362,17 @@ public class MineInfomationActivity extends BaseActivity implements View.OnClick
 
             }
         }
+    }
+
+    @Override
+    public void setData(PostNoBean datas) {
+        Intent intent=new Intent();
+        setResult(Constant.RESULTCODE,intent);
+        finish();
+    }
+
+    @Override
+    public void netWorkError() {
+        Toast("网络异常");
     }
 }

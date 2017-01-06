@@ -22,7 +22,7 @@ import butterknife.OnClick;
  * Created by joker on 2016/11/21.
  */
 
-public class RegisterActivity extends BaseActivity implements BaseView.RegisterView{
+public class RegisterActivity extends BaseNewActivity implements BaseView.RegisterView{
     @Bind(R.id.register_name)
     EditText registerName;
     @Bind(R.id.register_password)
@@ -70,6 +70,6 @@ public class RegisterActivity extends BaseActivity implements BaseView.RegisterV
 
     @Override
     public void netWorkError() {
-
+        Toast("网络异常");
     }
 }

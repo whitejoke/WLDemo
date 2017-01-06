@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 import com.hdit.wldemo.R;
+import com.hdit.wldemo.constant.Constant;
 
 import java.io.File;
 
@@ -32,6 +33,12 @@ public class ActivityUtils {
         intent.putExtras(bundle);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         UIUtils.getContext().startActivity(intent);
+    }
+    public static void startActivityForResult(Class<?> clz, Bundle bundle) {
+        Intent intent = new Intent(UIUtils.getContext(), clz);
+        intent.putExtras(bundle);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        UIUtils.getActivity().startActivityForResult(intent, Constant.REQUESTCODE);
     }
 
     // 收起软键盘

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.hdit.wldemo.activity.MainActivity;
 import com.hdit.wldemo.utils.UIUtils;
 import com.hdit.wldemo.utils.rxUtils;
 
@@ -26,6 +27,7 @@ public abstract class BaseFragment extends Fragment {
     protected int page = 1;
     protected boolean isNull = false;
     protected View view;
+    public MainActivity activity;
 
 
     @Override
@@ -40,6 +42,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        activity= (MainActivity) getActivity();
         View view = initView();
         ButterKnife.bind(this, view);
         return view;

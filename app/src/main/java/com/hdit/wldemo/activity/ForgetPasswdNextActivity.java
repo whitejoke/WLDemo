@@ -27,7 +27,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/29.
  */
 
-public class ForgetPasswdNextActivity extends BaseActivity implements BaseView.foegetPassword {
+public class ForgetPasswdNextActivity extends BaseNewActivity implements BaseView.foegetPassword {
     @Bind(R.id.toolbar)
     Toolbar toolbar;
     @Bind(R.id.toolbar_title)
@@ -60,6 +60,12 @@ public class ForgetPasswdNextActivity extends BaseActivity implements BaseView.f
         toolbarTitle.setText("找回密码");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         code=getIntent().getIntExtra("code",0);
         email=getIntent().getStringExtra("email");
@@ -97,5 +103,10 @@ public class ForgetPasswdNextActivity extends BaseActivity implements BaseView.f
         intent.putExtra("type", Constant.TYPE);
         intent.setClass(ForgetPasswdNextActivity.this,LoginActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void netWorkError() {
+        Toast("网络异常");
     }
 }

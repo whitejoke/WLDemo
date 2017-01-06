@@ -25,6 +25,8 @@ public class MainViewPresenterImpl extends BasePresenterImpl<BaseView.MainView> 
             case R.id.tab_mine:
                 view.switchMine();
                 break;
+            case R.id.tab_business:
+                view.switchBusiness();
         }
     }
 }

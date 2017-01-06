@@ -24,6 +24,11 @@ public class MemberPresenterImpl extends BasePresenterImpl<BaseView.MemberView> 
     }
 
     @Override
+    public void error() {
+        view.netWorkError();
+    }
+
+    @Override
     public void requestNeyWork(int userId) {
         memberModel.netWorkMember(userId,this);
     }

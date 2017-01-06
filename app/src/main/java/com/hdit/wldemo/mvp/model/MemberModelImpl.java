@@ -15,6 +15,7 @@ public class MemberModelImpl implements BaseModel.MemberModel {
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
+                memberData.error();
             }
 
             @Override

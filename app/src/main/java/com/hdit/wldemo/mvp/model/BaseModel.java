@@ -17,16 +17,31 @@ public interface BaseModel<T> {
     interface LoginModel{
         void netWorkLogin(Context context, Map<String,String> map,BaseDataBridge.LoginData loginData);
     }
+    interface LoginForEmpModel{
+        void netWorkLogin(Map<String,String> map,BaseDataBridge.LoginForEmp loginForEmp);
+    }
     interface RegisterModel{
         void netWorkRegister(Map<String,String> map,BaseDataBridge.RegisterData registerData);
     }
     interface MemberModel{
         void netWorkMember(int userId,BaseDataBridge.MemberData memberData);
     }
+    interface MemberForEmpModel{
+        void netWorkMemberForEmp(int empId,BaseDataBridge.MemberForEmpData memberForEmpData);
+    }
     interface UpdatePasswdModel{
         void netWorkUpdatePasswd(Map<String,String> map,BaseDataBridge.UpdataPasswdData updataPasswdData);
     }
     interface ForgetPasswdModel{
         void netWorkForgetPasswd(Map<String,String> map,BaseDataBridge.ForgetPasswdData forgetPasswdData);
+    }
+    interface OrderDetailModel{
+        void netWorkOrderDetail(Map<String,String> map,BaseDataBridge.OrderDetailData orderDetailData);
+    }
+    interface ApplyModel{
+        void netWorkApply(int userId,BaseDataBridge.ApplyData applyData);
+    }
+    interface UpdateEmpModel{
+        void netWorkUpdateEmp(Map<String,String> map,BaseDataBridge.UpdataEmpData updataEmpData);
     }
 }

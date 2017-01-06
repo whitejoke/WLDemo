@@ -27,7 +27,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/25.
  */
 
-public class SettingPasswordActivity extends BaseActivity implements BaseView.updatePasswdView{
+public class SettingPasswordActivity extends BaseNewActivity implements BaseView.updatePasswdView{
     @Bind(R.id.old_password)
     EditText oldPassword;
     @Bind(R.id.new_password)
@@ -57,6 +57,13 @@ public class SettingPasswordActivity extends BaseActivity implements BaseView.up
         toolbarTitle.setText("设置密码");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         updatePasswd=new UpdatePasswdPresenterImpl(this);
         btnPassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,6 +107,6 @@ public class SettingPasswordActivity extends BaseActivity implements BaseView.up
 
     @Override
     public void netWorkError() {
-
+        Toast("网络异常");
     }
 }

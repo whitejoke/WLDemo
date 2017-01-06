@@ -8,6 +8,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="15dp" />
+
     <LinearLayout
         android:divider="@drawable/divider"
         android:showDividers="middle"
@@ -230,8 +231,17 @@
                 />
         </LinearLayout>
 
-    </LinearLayout>
 
+        <Button
+            android:id="@+id/btn_save"
+            android:textColor="@color/white"
+            android:text="@string/btn_save"
+            android:background="@drawable/btn_blue"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

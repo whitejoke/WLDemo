@@ -5,6 +5,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,7 +29,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/24.
  */
 
-public class CosmetologyActivity extends BaseActivity implements BaseView.HomeView{
+public class CosmetologyActivity extends BaseNewActivity implements BaseView.HomeView{
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -64,6 +65,12 @@ public class CosmetologyActivity extends BaseActivity implements BaseView.HomeVi
         toolbarTitle.setText("美容知识");
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbar.setBackgroundResource(R.color.white);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         map.put("pageNum",pageNum);
         map.put("pageSize",pageSize);

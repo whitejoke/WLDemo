@@ -29,4 +29,9 @@ public class UpdatePasswdPresenterImpl extends BasePresenterImpl<BaseView.update
     public void addData(PostNoBean datas) {
         view.setData(datas);
     }
+
+    @Override
+    public void error() {
+        view.netWorkError();
+    }
 }

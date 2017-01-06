@@ -27,6 +27,11 @@
             app:starFill="@mipmap/comment_choose"
             app:starImageSize="50dp"/>
         <EditText
+            android:padding="2dp"
+            android:gravity="start"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/gry_stork"
+            android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="150dp" />

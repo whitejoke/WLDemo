@@ -23,6 +23,7 @@ public class RegisterModelImpl implements BaseModel.RegisterModel {
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
+                registerData.error();
             }
         });
     }

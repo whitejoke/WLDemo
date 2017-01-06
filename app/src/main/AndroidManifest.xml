@@ -39,6 +39,9 @@
         <activity android:name=".activity.ForgetPasswdActivity"/>
         <activity android:name=".activity.ForgetPasswdNextActivity"/>
         <activity android:name=".activity.ChangeTelephoneActivity"/>
+        <activity android:name=".activity.MineApplyNewActivity"/>
+        <activity android:name=".activity.ApplyDetailActivity"/>
+        <activity android:name=".activity.MineEmpInfomationActivity"/>
     </application>
 
 </manifest>

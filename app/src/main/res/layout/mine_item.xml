@@ -52,6 +52,7 @@
                 android:background="@null"
                 android:id="@+id/member_name"
                 android:text="Viilen slam Hu"
+                android:textSize="@dimen/mine_text"
                 android:textColor="@color/black"
                 android:gravity="right"
                 android:padding="10dp"
@@ -73,6 +74,7 @@
             <TextView
                 android:id="@+id/member_sex"
                 android:text="男"
+                android:textSize="@dimen/mine_text"
                 android:textColor="@color/black"
                 android:gravity="right"
                 android:padding="10dp"
@@ -97,6 +99,7 @@
                 android:background="@null"
                 android:id="@+id/member_phone"
                 android:text="13888888888"
+                android:textSize="@dimen/mine_text"
                 android:textColor="@color/black"
                 android:gravity="right"
                 android:padding="10dp"
@@ -121,6 +124,7 @@
             <EditText
                 android:background="@null"
                 android:text="宁波 鄞州"
+                android:textSize="@dimen/mine_text"
                 android:textColor="@color/black"
                 android:gravity="right"
                 android:padding="10dp"
@@ -143,6 +147,7 @@
             <TextView
                 android:id="@+id/member_birthday"
                 android:text="08 15"
+                android:textSize="@dimen/mine_text"
                 android:textColor="@color/black"
                 android:gravity="right"
                 android:padding="10dp"
@@ -219,6 +224,16 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:textColor="@color/white"
+            android:text="@string/btn_save"
+            android:background="@drawable/btn_blue"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

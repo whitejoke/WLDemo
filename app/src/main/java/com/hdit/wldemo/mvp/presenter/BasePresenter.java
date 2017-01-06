@@ -2,6 +2,7 @@ package com.hdit.wldemo.mvp.presenter;
 
 import android.content.Context;
 
+import com.hdit.wldemo.mvp.Bean.ApplyBean;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
 
 import java.util.Map;
@@ -24,16 +25,32 @@ public interface BasePresenter {
     interface LoginPresenter{
         void requestNetWork(Context context,Map<String, String> map);
     }
+    interface LoginForEmpPresenter{
+        void requestNetWork(Map<String,String> map);
+    }
     interface RegisterPresenter{
         void requestNeyWork(Map<String,String> map);
     }
     interface MemberPresenter{
         void requestNeyWork(int userId);
     }
+    interface MemberForEmpPresenter{
+        void requestNetWork(int empId);
+    }
     interface updatePasswd{
         void requestNetWork(Map<String,String> map);
     }
     interface forgetPasswdPresenter{
+        void requestNetWork(Map<String,String> map);
+    }
+    interface orderDetailPresenter{
+        void requestNetWork(Map<String,String> map);
+    }
+    interface applyPresenter{
+        void requestNetWork(int userId);
+        void onclick(ApplyBean.RowsBean info);
+    }
+    interface updateEmp{
         void requestNetWork(Map<String,String> map);
     }
 }
