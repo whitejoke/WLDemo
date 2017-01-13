@@ -6,7 +6,8 @@ package com.hdit.wldemo.network;
 
 public class Api {
     //薇琳Api
-    public static final String BASE_API_WL = "http://192.168.1.188:8070/";
+    //public static final String BASE_API_WL = "http://192.168.1.188:8070/";
+    public static final String BASE_API_WL = "http://192.168.1.113:8080/WeiLinKQ/";
 
     //注册
     public static final String BUILDARCHIVE="common/buildArchive.do";
@@ -37,6 +38,12 @@ public class Api {
 
     //修改员工信息
     public static final String UPDATEEMPLOYEE="employee/updateEmployee.do";
+
+    //评论
+    public static final String UPDATEEVALU="evalu/updateEvalu.do";
+
+    //审核
+    public static final String REVIEWPREFEREN="preferen/reviewPreferen.do";
 
 
     //职务管理

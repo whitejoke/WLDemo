@@ -2,7 +2,6 @@ package com.hdit.wldemo.mvp.presenter;
 
 import android.content.Context;
 
-import com.hdit.wldemo.mvp.Bean.ApplyBean;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
 
 import java.util.Map;
@@ -48,9 +47,14 @@ public interface BasePresenter {
     }
     interface applyPresenter{
         void requestNetWork(int userId);
-        void onclick(ApplyBean.RowsBean info);
     }
     interface updateEmp{
+        void requestNetWork(Map<String,String> map);
+    }
+    interface updateEvalu{
+        void requestNetWork(Map<String,String> map);
+    }
+    interface reviewPreferen{
         void requestNetWork(Map<String,String> map);
     }
 }

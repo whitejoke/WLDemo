@@ -1,6 +1,5 @@
 package com.hdit.wldemo.mvp.presenter;
 
-import com.hdit.wldemo.activity.ApplyDetailActivity;
 import com.hdit.wldemo.mvp.Bean.ApplyBean;
 import com.hdit.wldemo.mvp.model.ApplyModelImpl;
 import com.hdit.wldemo.mvp.model.BaseDataBridge;
@@ -33,10 +32,5 @@ public class ApplyPresenterImpl extends BasePresenterImpl<BaseView.applyDetail> 
     @Override
     public void requestNetWork(int userId) {
         applyModel.netWorkApply(userId,this);
-    }
-
-    @Override
-    public void onclick(ApplyBean.RowsBean info) {
-        ApplyDetailActivity.startIntent(info);
     }
 }

@@ -75,6 +75,8 @@ public abstract class BaseNewActivity extends AppCompatActivity {
         editor.putInt("id", result.get(0).getId());
         editor.putBoolean("isChecked",ischeck);
         editor.putString("phone",result.get(0).getCustoInfo().getTelphone());
+        editor.putString("name", result.get(0).getCustoInfo().getUuid());
+        editor.putInt("sex", result.get(0).getCustoInfo().getSex());
         editor.commit();
     }
     protected void setMemberForEmpSharedPreference(UserForEmp.ResultBean.DataBean result, boolean ischeck) {

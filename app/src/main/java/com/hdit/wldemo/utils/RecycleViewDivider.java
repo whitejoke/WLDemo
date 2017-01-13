@@ -11,17 +11,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-/**
- * Created by joker on 2016/11/24.
- */
 
 public class RecycleViewDivider extends RecyclerView.ItemDecoration {
 
+    private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
     private Paint mPaint;
     private Drawable mDivider;
     private int mDividerHeight = 2;//分割线高度，默认为1px
     private int mOrientation;//列表的方向：LinearLayoutManager.VERTICAL或LinearLayoutManager.HORIZONTAL
-    private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
 
     /**
      * 默认分割线：高度为2px，颜色为灰色

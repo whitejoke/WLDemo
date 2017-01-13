@@ -64,4 +64,11 @@ public interface WLApi {
 
     @POST(Api.UPDATEEMPLOYEE)
     Observable<PostNoBean> postUpdateEmp(@QueryMap Map<String,String> map);
+
+    @POST(Api.UPDATEEVALU)
+    Observable<PostNoBean> postUpdateEvalu(@QueryMap Map<String,String> map);
+
+    @POST(Api.REVIEWPREFEREN)
+    Observable<PostNoBean> postReviewPreferen(@QueryMap Map<String,String> map);
+
 }

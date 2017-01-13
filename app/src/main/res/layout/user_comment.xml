@@ -27,6 +27,7 @@
             app:starFill="@mipmap/comment_choose"
             app:starImageSize="50dp"/>
         <EditText
+            android:id="@+id/evaluate_content"
             android:padding="2dp"
             android:gravity="start"
             android:textCursorDrawable="@null"
@@ -36,5 +37,13 @@
             android:layout_width="match_parent"
             android:layout_height="150dp" />
     </LinearLayout>
+    <Button
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_login"
+        android:text="发布评论"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_evaluate" />
 
 </LinearLayout>

@@ -143,6 +143,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener, 
         toolbar.setNavigationIcon(R.mipmap.toolbar_left);
         toolbarRight.setImageResource(R.mipmap.mine_setting);
         toolbarTitle.setTextColor(this.getResources().getColorStateList(R.color.white));
+
     }
 
     @Override

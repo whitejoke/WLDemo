@@ -64,4 +64,12 @@ public interface BaseDataBridge<T> {
         void addData(PostNoBean datas);
         void error();
     }
+    interface UpdateEvaluData{
+        void addData(PostNoBean datas);
+        void error();
+    }
+    interface ReviewPreferenData{
+        void addData(PostNoBean datas);
+        void error();
+    }
 }

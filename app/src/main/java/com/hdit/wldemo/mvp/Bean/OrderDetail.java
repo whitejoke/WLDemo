@@ -10,20 +10,20 @@ public class OrderDetail {
 
     /**
      * total : 0
-     * rows : [{"type":0,"price":148744,"kqOrder":{"id":1,"uuid":null,"title":"胡斌于[2016122115]咨询的订单","adviceId":"1","orderNum":"20161221162617963000","type":null,"status":0,"packageId":"2","createTime":1482307033000,"updateTime":1482308773000,"isDel":0,"detail":null},"adviceDetail":{"id":1,"userName":"胡斌","projectName":"割双眼皮","reception":{"id":1,"uuid":null,"empName":"澹台醉波","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"advice":{"id":7,"uuid":null,"empName":"伯虹玉","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"doctor":{"id":null,"uuid":null,"empName":"符思菱","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"developer":{"id":null,"uuid":null,"empName":"公叔傲儿","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"kqAdvice":{"id":1,"uuid":null,"title":"胡斌于[2016-12-21]咨询的割双眼皮","userId":"7","reception":"1","advice":"7","projectId":"1","waitTime":null,"depaId":null,"adviceStatus":0,"doctId":"8","devId":"18","lastTime":1482305929000,"adviceTime":1482305929000,"createTime":null,"updateTime":null,"isDel":null,"adviceNote":"咨询双眼皮项目的相关内容"}},"packageSend":{"id":2,"packageName":"套餐1002","packagePrice":54423,"content":"套餐1001描述内容","projectList":[{"id":6,"uuid":null,"proName":"割双眼皮","proType":"2","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":2,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":11,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":35,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":39,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":43,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":51,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}]},"preferDetails":[{"id":1,"level":1,"preferPrice":5587,"referPrice":"1800","preferStatus":0,"note":"阿娇说过的话啊三款经典但千万i了凯撒奖活动看"},{"id":3,"level":3,"preferPrice":5467,"referPrice":"25000","preferStatus":0,"note":"山东起舞哦卡升级换代加工费大家发改委i鳄鱼肉温柔去"}],"projects":[{"id":41,"proPrice":5444,"proStatus":0,"kqProject":{"id":41,"uuid":null,"proName":"牙齿矫正","proType":"5","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480577275000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":50,"proPrice":88877,"proStatus":0,"kqProject":{"id":50,"uuid":null,"proName":"割双眼皮","proType":"1","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477280668000,"updateTime":1480490334000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}}],"evaluDetails":[{"id":1,"userName":null,"kqEvalu":{"id":1,"uuid":null,"title":null,"evaluTarget":null,"evaluType":1,"star":null,"status":0,"createTime":null,"updateTime":null,"isDel":null,"content":null},"employee":{"id":1,"uuid":null,"empName":"澹台醉波","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":2,"userName":null,"kqEvalu":{"id":2,"uuid":null,"title":null,"evaluTarget":null,"evaluType":3,"star":null,"status":0,"createTime":null,"updateTime":null,"isDel":null,"content":null},"employee":{"id":8,"uuid":null,"empName":"符思菱","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}}],"feedbacks":[{"id":1,"content":"咨询回访情况记录","empInfo":{"id":7,"empName":"伯虹玉","entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":2,"uuid":null,"positionName":"咨询师","room":null,"createTime":null,"updateTime":null,"isDel":null}}},{"id":2,"content":"订单回访内容记录","empInfo":{"id":14,"empName":"池吉敏","entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":4,"uuid":null,"positionName":"业务经理","room":null,"createTime":null,"updateTime":null,"isDel":null}}}]}]
+     * rows : [{"type":0,"price":16900,"kqOrder":{"id":1,"uuid":null,"title":"胡斌于[2017010517]咨询的订单","adviceId":"2","orderNum":"20170105170648111000","type":null,"status":2,"packageId":"1","createTime":1483607206000,"updateTime":1483607286000,"isDel":0,"detail":null},"adviceDetail":{"id":2,"userName":"胡斌","projectName":"割双眼皮","reception":{"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"advice":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"doctor":{"id":3,"empName":"丁曼卉","empNumber":"A8723117","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"developer":{"id":19,"empName":"司马娅静","empNumber":"A8723133","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"empAdvices":[{"id":4,"adviceId":"2","empId":"5","empType":1,"serviceTime":1483607126000,"empInfo":{"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"evaluId":2},{"id":5,"adviceId":"2","empId":"44","empType":2,"serviceTime":1483607126000,"empInfo":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":3},{"id":6,"adviceId":"2","empId":"19","empType":4,"serviceTime":1483607126000,"empInfo":{"id":19,"empName":"司马娅静","empNumber":"A8723133","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":null},{"id":7,"adviceId":"2","empId":"3","empType":3,"serviceTime":1483607295000,"empInfo":{"id":3,"empName":"丁曼卉","empNumber":"A8723117","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":4}],"kqAdvice":{"id":2,"uuid":null,"title":"胡斌于[2017-01-05]咨询的割双眼皮","userId":"7","projectId":"5","waitTime":"12","depaId":null,"adviceStatus":2,"lastTime":1483607128000,"adviceTime":1483607164000,"createTime":1483607126000,"updateTime":1483607162000,"isDel":null,"adviceNote":"312312312"},"startTime":null,"endTime":null},"packageSend":{"id":1,"packageName":"套餐1001","packagePrice":12355,"content":"套餐1001描述内容","projectList":[{"id":4,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":9,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":13,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":21,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":29,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":37,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":53,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}]},"preferDetails":[{"id":9,"level":1,"preferPrice":455,"referPrice":"1232以上","empIdList":null,"preferStatus":0,"note":"啊上的垃圾了大家啊苏联空军","reviewNote":null,"applyTime":null,"reviewTime":null},{"id":3,"level":3,"preferPrice":45645,"referPrice":"25000","empIdList":null,"preferStatus":0,"note":"山东起舞哦卡升级换代加工费大家发改委i鳄鱼肉温柔去","reviewNote":null,"applyTime":null,"reviewTime":null},{"id":1,"level":1,"preferPrice":78788,"referPrice":"1800","empIdList":null,"preferStatus":0,"note":"阿娇说过的话啊三款经典但千万i了凯撒奖活动看","reviewNote":null,"applyTime":null,"reviewTime":null}],"projects":[{"id":4,"proPrice":0,"proStatus":2,"kqProject":{"id":4,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":1477291406000,"updateTime":1481769723000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":9,"proPrice":0,"proStatus":0,"kqProject":{"id":9,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":13,"proPrice":0,"proStatus":0,"kqProject":{"id":13,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":21,"proPrice":0,"proStatus":0,"kqProject":{"id":21,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":29,"proPrice":0,"proStatus":0,"kqProject":{"id":29,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":37,"proPrice":0,"proStatus":0,"kqProject":{"id":37,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":53,"proPrice":0,"proStatus":0,"kqProject":{"id":53,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":1477291406000,"updateTime":1482375175000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":58,"proPrice":4545,"proStatus":0,"kqProject":{"id":58,"uuid":null,"proName":"奋斗到fgd","proType":"2","referPrice":"风格豆腐干df","technology":"大范甘迪发给","course":"豆腐干dfg","suitCrowds":"df","effect":"豆豆腐干dfg腐干","cycle":"豆腐干地方","isHospital":0,"createTime":1483584213000,"updateTime":1483584213000,"isDel":0,"matters":"豆腐干","merits":"发给地方","demerits":"地方豆腐干","note":""}}],"evaluDetails":[{"id":2,"userName":null,"kqEvalu":{"id":2,"uuid":null,"title":null,"evaluTarget":null,"evaluType":1,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607126000,"updateTime":1483607126000,"isDel":null,"content":null},"employee":{"id":5,"uuid":null,"loginName":null,"passwd":null,"empName":"谷碧萱","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":3,"userName":null,"kqEvalu":{"id":3,"uuid":null,"title":null,"evaluTarget":null,"evaluType":2,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607178000,"updateTime":1483607178000,"isDel":null,"content":null},"employee":{"id":44,"uuid":null,"loginName":null,"passwd":null,"empName":"咨询师","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":4,"userName":null,"kqEvalu":{"id":4,"uuid":null,"title":null,"evaluTarget":null,"evaluType":3,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607429000,"updateTime":1483607429000,"isDel":null,"content":null},"employee":{"id":3,"uuid":null,"loginName":null,"passwd":null,"empName":"丁曼卉","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":5,"userName":null,"kqEvalu":{"id":5,"uuid":null,"title":null,"evaluTarget":null,"evaluType":4,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607925000,"updateTime":1483607925000,"isDel":null,"content":null},"employee":{"id":42,"uuid":null,"loginName":null,"passwd":null,"empName":"东门巧蕊","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":6,"userName":null,"kqEvalu":{"id":6,"uuid":null,"title":null,"evaluTarget":null,"evaluType":4,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607948000,"updateTime":1483607948000,"isDel":null,"content":null},"employee":{"id":1,"uuid":null,"loginName":null,"passwd":null,"empName":"澹台醉波","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}}],"feedbacks":[{"id":1,"type":0,"content":"回访内容","evaluId":5,"createTime":1483607925000,"updateTime":1483607925000,"empInfo":{"id":42,"empName":"东门巧蕊","empNumber":"A8723156","entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":11,"uuid":null,"positionName":"培训老师","createTime":null,"updateTime":null,"isDel":null}}},{"id":2,"type":1,"content":"加快大火烧开的机会","evaluId":6,"createTime":1483607948000,"updateTime":1483607948000,"empInfo":{"id":1,"empName":"澹台醉波","empNumber":"A8723115","entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":1,"uuid":null,"positionName":"前台接待","createTime":null,"updateTime":null,"isDel":null}}}]}]
      */
 
     private int total;
     /**
      * type : 0
-     * price : 148744.0
-     * kqOrder : {"id":1,"uuid":null,"title":"胡斌于[2016122115]咨询的订单","adviceId":"1","orderNum":"20161221162617963000","type":null,"status":0,"packageId":"2","createTime":1482307033000,"updateTime":1482308773000,"isDel":0,"detail":null}
-     * adviceDetail : {"id":1,"userName":"胡斌","projectName":"割双眼皮","reception":{"id":1,"uuid":null,"empName":"澹台醉波","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"advice":{"id":7,"uuid":null,"empName":"伯虹玉","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"doctor":{"id":null,"uuid":null,"empName":"符思菱","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"developer":{"id":null,"uuid":null,"empName":"公叔傲儿","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null},"kqAdvice":{"id":1,"uuid":null,"title":"胡斌于[2016-12-21]咨询的割双眼皮","userId":"7","reception":"1","advice":"7","projectId":"1","waitTime":null,"depaId":null,"adviceStatus":0,"doctId":"8","devId":"18","lastTime":1482305929000,"adviceTime":1482305929000,"createTime":null,"updateTime":null,"isDel":null,"adviceNote":"咨询双眼皮项目的相关内容"}}
-     * packageSend : {"id":2,"packageName":"套餐1002","packagePrice":54423,"content":"套餐1001描述内容","projectList":[{"id":6,"uuid":null,"proName":"割双眼皮","proType":"2","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":2,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":11,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":35,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":39,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":43,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":51,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}]}
-     * preferDetails : [{"id":1,"level":1,"preferPrice":5587,"referPrice":"1800","preferStatus":0,"note":"阿娇说过的话啊三款经典但千万i了凯撒奖活动看"},{"id":3,"level":3,"preferPrice":5467,"referPrice":"25000","preferStatus":0,"note":"山东起舞哦卡升级换代加工费大家发改委i鳄鱼肉温柔去"}]
-     * projects : [{"id":41,"proPrice":5444,"proStatus":0,"kqProject":{"id":41,"uuid":null,"proName":"牙齿矫正","proType":"5","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480577275000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":50,"proPrice":88877,"proStatus":0,"kqProject":{"id":50,"uuid":null,"proName":"割双眼皮","proType":"1","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477280668000,"updateTime":1480490334000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}}]
-     * evaluDetails : [{"id":1,"userName":null,"kqEvalu":{"id":1,"uuid":null,"title":null,"evaluTarget":null,"evaluType":1,"star":null,"status":0,"createTime":null,"updateTime":null,"isDel":null,"content":null},"employee":{"id":1,"uuid":null,"empName":"澹台醉波","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":2,"userName":null,"kqEvalu":{"id":2,"uuid":null,"title":null,"evaluTarget":null,"evaluType":3,"star":null,"status":0,"createTime":null,"updateTime":null,"isDel":null,"content":null},"employee":{"id":8,"uuid":null,"empName":"符思菱","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}}]
-     * feedbacks : [{"id":1,"content":"咨询回访情况记录","empInfo":{"id":7,"empName":"伯虹玉","entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":2,"uuid":null,"positionName":"咨询师","room":null,"createTime":null,"updateTime":null,"isDel":null}}},{"id":2,"content":"订单回访内容记录","empInfo":{"id":14,"empName":"池吉敏","entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":4,"uuid":null,"positionName":"业务经理","room":null,"createTime":null,"updateTime":null,"isDel":null}}}]
+     * price : 16900.0
+     * kqOrder : {"id":1,"uuid":null,"title":"胡斌于[2017010517]咨询的订单","adviceId":"2","orderNum":"20170105170648111000","type":null,"status":2,"packageId":"1","createTime":1483607206000,"updateTime":1483607286000,"isDel":0,"detail":null}
+     * adviceDetail : {"id":2,"userName":"胡斌","projectName":"割双眼皮","reception":{"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"advice":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"doctor":{"id":3,"empName":"丁曼卉","empNumber":"A8723117","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"developer":{"id":19,"empName":"司马娅静","empNumber":"A8723133","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"empAdvices":[{"id":4,"adviceId":"2","empId":"5","empType":1,"serviceTime":1483607126000,"empInfo":{"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"evaluId":2},{"id":5,"adviceId":"2","empId":"44","empType":2,"serviceTime":1483607126000,"empInfo":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":3},{"id":6,"adviceId":"2","empId":"19","empType":4,"serviceTime":1483607126000,"empInfo":{"id":19,"empName":"司马娅静","empNumber":"A8723133","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":null},{"id":7,"adviceId":"2","empId":"3","empType":3,"serviceTime":1483607295000,"empInfo":{"id":3,"empName":"丁曼卉","empNumber":"A8723117","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":4}],"kqAdvice":{"id":2,"uuid":null,"title":"胡斌于[2017-01-05]咨询的割双眼皮","userId":"7","projectId":"5","waitTime":"12","depaId":null,"adviceStatus":2,"lastTime":1483607128000,"adviceTime":1483607164000,"createTime":1483607126000,"updateTime":1483607162000,"isDel":null,"adviceNote":"312312312"},"startTime":null,"endTime":null}
+     * packageSend : {"id":1,"packageName":"套餐1001","packagePrice":12355,"content":"套餐1001描述内容","projectList":[{"id":4,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":9,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":13,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":21,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":29,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":37,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":53,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}]}
+     * preferDetails : [{"id":9,"level":1,"preferPrice":455,"referPrice":"1232以上","empIdList":null,"preferStatus":0,"note":"啊上的垃圾了大家啊苏联空军","reviewNote":null,"applyTime":null,"reviewTime":null},{"id":3,"level":3,"preferPrice":45645,"referPrice":"25000","empIdList":null,"preferStatus":0,"note":"山东起舞哦卡升级换代加工费大家发改委i鳄鱼肉温柔去","reviewNote":null,"applyTime":null,"reviewTime":null},{"id":1,"level":1,"preferPrice":78788,"referPrice":"1800","empIdList":null,"preferStatus":0,"note":"阿娇说过的话啊三款经典但千万i了凯撒奖活动看","reviewNote":null,"applyTime":null,"reviewTime":null}]
+     * projects : [{"id":4,"proPrice":0,"proStatus":2,"kqProject":{"id":4,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":1477291406000,"updateTime":1481769723000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":9,"proPrice":0,"proStatus":0,"kqProject":{"id":9,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":13,"proPrice":0,"proStatus":0,"kqProject":{"id":13,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":21,"proPrice":0,"proStatus":0,"kqProject":{"id":21,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":29,"proPrice":0,"proStatus":0,"kqProject":{"id":29,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":37,"proPrice":0,"proStatus":0,"kqProject":{"id":37,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480490344000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":53,"proPrice":0,"proStatus":0,"kqProject":{"id":53,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":1477291406000,"updateTime":1482375175000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}},{"id":58,"proPrice":4545,"proStatus":0,"kqProject":{"id":58,"uuid":null,"proName":"奋斗到fgd","proType":"2","referPrice":"风格豆腐干df","technology":"大范甘迪发给","course":"豆腐干dfg","suitCrowds":"df","effect":"豆豆腐干dfg腐干","cycle":"豆腐干地方","isHospital":0,"createTime":1483584213000,"updateTime":1483584213000,"isDel":0,"matters":"豆腐干","merits":"发给地方","demerits":"地方豆腐干","note":""}}]
+     * evaluDetails : [{"id":2,"userName":null,"kqEvalu":{"id":2,"uuid":null,"title":null,"evaluTarget":null,"evaluType":1,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607126000,"updateTime":1483607126000,"isDel":null,"content":null},"employee":{"id":5,"uuid":null,"loginName":null,"passwd":null,"empName":"谷碧萱","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":3,"userName":null,"kqEvalu":{"id":3,"uuid":null,"title":null,"evaluTarget":null,"evaluType":2,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607178000,"updateTime":1483607178000,"isDel":null,"content":null},"employee":{"id":44,"uuid":null,"loginName":null,"passwd":null,"empName":"咨询师","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":4,"userName":null,"kqEvalu":{"id":4,"uuid":null,"title":null,"evaluTarget":null,"evaluType":3,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607429000,"updateTime":1483607429000,"isDel":null,"content":null},"employee":{"id":3,"uuid":null,"loginName":null,"passwd":null,"empName":"丁曼卉","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":5,"userName":null,"kqEvalu":{"id":5,"uuid":null,"title":null,"evaluTarget":null,"evaluType":4,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607925000,"updateTime":1483607925000,"isDel":null,"content":null},"employee":{"id":42,"uuid":null,"loginName":null,"passwd":null,"empName":"东门巧蕊","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}},{"id":6,"userName":null,"kqEvalu":{"id":6,"uuid":null,"title":null,"evaluTarget":null,"evaluType":4,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607948000,"updateTime":1483607948000,"isDel":null,"content":null},"employee":{"id":1,"uuid":null,"loginName":null,"passwd":null,"empName":"澹台醉波","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}}]
+     * feedbacks : [{"id":1,"type":0,"content":"回访内容","evaluId":5,"createTime":1483607925000,"updateTime":1483607925000,"empInfo":{"id":42,"empName":"东门巧蕊","empNumber":"A8723156","entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":11,"uuid":null,"positionName":"培训老师","createTime":null,"updateTime":null,"isDel":null}}},{"id":2,"type":1,"content":"加快大火烧开的机会","evaluId":6,"createTime":1483607948000,"updateTime":1483607948000,"empInfo":{"id":1,"empName":"澹台醉波","empNumber":"A8723115","entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":1,"uuid":null,"positionName":"前台接待","createTime":null,"updateTime":null,"isDel":null}}}]
      */
 
     private List<RowsBean> rows;
@@ -50,70 +50,81 @@ public class OrderDetail {
         /**
          * id : 1
          * uuid : null
-         * title : 胡斌于[2016122115]咨询的订单
-         * adviceId : 1
-         * orderNum : 20161221162617963000
+         * title : 胡斌于[2017010517]咨询的订单
+         * adviceId : 2
+         * orderNum : 20170105170648111000
          * type : null
-         * status : 0
-         * packageId : 2
-         * createTime : 1482307033000
-         * updateTime : 1482308773000
+         * status : 2
+         * packageId : 1
+         * createTime : 1483607206000
+         * updateTime : 1483607286000
          * isDel : 0
          * detail : null
          */
 
         private KqOrderBean kqOrder;
         /**
-         * id : 1
+         * id : 2
          * userName : 胡斌
          * projectName : 割双眼皮
-         * reception : {"id":1,"uuid":null,"empName":"澹台醉波","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}
-         * advice : {"id":7,"uuid":null,"empName":"伯虹玉","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}
-         * doctor : {"id":null,"uuid":null,"empName":"符思菱","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}
-         * developer : {"id":null,"uuid":null,"empName":"公叔傲儿","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}
-         * kqAdvice : {"id":1,"uuid":null,"title":"胡斌于[2016-12-21]咨询的割双眼皮","userId":"7","reception":"1","advice":"7","projectId":"1","waitTime":null,"depaId":null,"adviceStatus":0,"doctId":"8","devId":"18","lastTime":1482305929000,"adviceTime":1482305929000,"createTime":null,"updateTime":null,"isDel":null,"adviceNote":"咨询双眼皮项目的相关内容"}
+         * reception : {"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null}
+         * advice : {"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null}
+         * doctor : {"id":3,"empName":"丁曼卉","empNumber":"A8723117","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null}
+         * developer : {"id":19,"empName":"司马娅静","empNumber":"A8723133","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null}
+         * empAdvices : [{"id":4,"adviceId":"2","empId":"5","empType":1,"serviceTime":1483607126000,"empInfo":{"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"evaluId":2},{"id":5,"adviceId":"2","empId":"44","empType":2,"serviceTime":1483607126000,"empInfo":{"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":3},{"id":6,"adviceId":"2","empId":"19","empType":4,"serviceTime":1483607126000,"empInfo":{"id":19,"empName":"司马娅静","empNumber":"A8723133","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":null},{"id":7,"adviceId":"2","empId":"3","empType":3,"serviceTime":1483607295000,"empInfo":{"id":3,"empName":"丁曼卉","empNumber":"A8723117","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null},"adviser":null,"evaluId":4}]
+         * kqAdvice : {"id":2,"uuid":null,"title":"胡斌于[2017-01-05]咨询的割双眼皮","userId":"7","projectId":"5","waitTime":"12","depaId":null,"adviceStatus":2,"lastTime":1483607128000,"adviceTime":1483607164000,"createTime":1483607126000,"updateTime":1483607162000,"isDel":null,"adviceNote":"312312312"}
+         * startTime : null
+         * endTime : null
          */
 
         private AdviceDetailBean adviceDetail;
         /**
-         * id : 2
-         * packageName : 套餐1002
-         * packagePrice : 54423.0
+         * id : 1
+         * packageName : 套餐1001
+         * packagePrice : 12355.0
          * content : 套餐1001描述内容
-         * projectList : [{"id":6,"uuid":null,"proName":"割双眼皮","proType":"2","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":2,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":11,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":35,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":39,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":43,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":51,"uuid":null,"proName":"隆鼻","proType":"3","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}]
+         * projectList : [{"id":4,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":9,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":13,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":21,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":29,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":37,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"},{"id":53,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":null,"updateTime":null,"isDel":null,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}]
          */
 
         private PackageSendBean packageSend;
         /**
-         * id : 1
+         * id : 9
          * level : 1
-         * preferPrice : 5587.0
-         * referPrice : 1800
+         * preferPrice : 455.0
+         * referPrice : 1232以上
+         * empIdList : null
          * preferStatus : 0
-         * note : 阿娇说过的话啊三款经典但千万i了凯撒奖活动看
+         * note : 啊上的垃圾了大家啊苏联空军
+         * reviewNote : null
+         * applyTime : null
+         * reviewTime : null
          */
 
         private List<PreferDetailsBean> preferDetails;
         /**
-         * id : 41
-         * proPrice : 5444.0
-         * proStatus : 0
-         * kqProject : {"id":41,"uuid":null,"proName":"牙齿矫正","proType":"5","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":0,"createTime":1477291406000,"updateTime":1480577275000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}
+         * id : 4
+         * proPrice : 0.0
+         * proStatus : 2
+         * kqProject : {"id":4,"uuid":null,"proName":"牙齿矫正","proType":"8","referPrice":"参考价格描述内容","technology":"技术手段描述内容","course":"手术疗程描述内容","suitCrowds":"事宜人群描述内容","effect":"治疗效果描述内容","cycle":"治疗描述内容","isHospital":1,"createTime":1477291406000,"updateTime":1481769723000,"isDel":0,"matters":"术后事项描述内容","merits":"就是一个项目的优点描述","demerits":"就是一个项目的缺点描述","note":"就是一个项目的备注信息"}
          */
 
         private List<ProjectsBean> projects;
         /**
-         * id : 1
+         * id : 2
          * userName : null
-         * kqEvalu : {"id":1,"uuid":null,"title":null,"evaluTarget":null,"evaluType":1,"star":null,"status":0,"createTime":null,"updateTime":null,"isDel":null,"content":null}
-         * employee : {"id":1,"uuid":null,"empName":"澹台醉波","positionId":null,"entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}
+         * kqEvalu : {"id":2,"uuid":null,"title":null,"evaluTarget":null,"evaluType":1,"star":null,"status":0,"startTime":null,"endTime":null,"createTime":1483607126000,"updateTime":1483607126000,"isDel":null,"content":null}
+         * employee : {"id":5,"uuid":null,"loginName":null,"passwd":null,"empName":"谷碧萱","positionId":null,"empNumber":null,"entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null}
          */
 
         private List<EvaluDetailsBean> evaluDetails;
         /**
          * id : 1
-         * content : 咨询回访情况记录
-         * empInfo : {"id":7,"empName":"伯虹玉","entryTime":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":2,"uuid":null,"positionName":"咨询师","room":null,"createTime":null,"updateTime":null,"isDel":null}}
+         * type : 0
+         * content : 回访内容
+         * evaluId : 5
+         * createTime : 1483607925000
+         * updateTime : 1483607925000
+         * empInfo : {"id":42,"empName":"东门巧蕊","empNumber":"A8723156","entryTime":null,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":{"id":11,"uuid":null,"positionName":"培训老师","createTime":null,"updateTime":null,"isDel":null}}
          */
 
         private List<FeedbacksBean> feedbacks;
@@ -306,79 +317,93 @@ public class OrderDetail {
             private String userName;
             private String projectName;
             /**
-             * id : 1
-             * uuid : null
-             * empName : 澹台醉波
-             * positionId : null
-             * entryTime : null
+             * id : 5
+             * empName : 谷碧萱
+             * empNumber : A8723119
+             * entryTime : 1476979200000
+             * room : null
              * sex : 0
              * createTime : null
              * updateTime : null
              * isDel : null
+             * position : null
              */
 
             private ReceptionBean reception;
             /**
-             * id : 7
-             * uuid : null
-             * empName : 伯虹玉
-             * positionId : null
-             * entryTime : null
+             * id : 44
+             * empName : 咨询师
+             * empNumber : A8723158
+             * entryTime : 1429027200000
+             * room : null
              * sex : 0
              * createTime : null
              * updateTime : null
              * isDel : null
+             * position : null
              */
 
             private AdviceBean advice;
             /**
-             * id : null
-             * uuid : null
-             * empName : 符思菱
-             * positionId : null
-             * entryTime : null
+             * id : 3
+             * empName : 丁曼卉
+             * empNumber : A8723117
+             * entryTime : 1476979200000
+             * room : null
              * sex : 0
              * createTime : null
              * updateTime : null
              * isDel : null
+             * position : null
              */
 
             private DoctorBean doctor;
             /**
-             * id : null
-             * uuid : null
-             * empName : 公叔傲儿
-             * positionId : null
-             * entryTime : null
+             * id : 19
+             * empName : 司马娅静
+             * empNumber : A8723133
+             * entryTime : 1476979200000
+             * room : null
              * sex : 0
              * createTime : null
              * updateTime : null
              * isDel : null
+             * position : null
              */
 
             private DeveloperBean developer;
             /**
-             * id : 1
+             * id : 2
              * uuid : null
-             * title : 胡斌于[2016-12-21]咨询的割双眼皮
+             * title : 胡斌于[2017-01-05]咨询的割双眼皮
              * userId : 7
-             * reception : 1
-             * advice : 7
-             * projectId : 1
-             * waitTime : null
+             * projectId : 5
+             * waitTime : 12
              * depaId : null
-             * adviceStatus : 0
-             * doctId : 8
-             * devId : 18
-             * lastTime : 1482305929000
-             * adviceTime : 1482305929000
-             * createTime : null
-             * updateTime : null
+             * adviceStatus : 2
+             * lastTime : 1483607128000
+             * adviceTime : 1483607164000
+             * createTime : 1483607126000
+             * updateTime : 1483607162000
              * isDel : null
-             * adviceNote : 咨询双眼皮项目的相关内容
+             * adviceNote : 312312312
              */
 
             private KqAdviceBean kqAdvice;
+            private Object startTime;
+            private Object endTime;
+            /**
+             * id : 4
+             * adviceId : 2
+             * empId : 5
+             * empType : 1
+             * serviceTime : 1483607126000
+             * empInfo : {"id":5,"empName":"谷碧萱","empNumber":"A8723119","entryTime":1476979200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null}
+             * adviser : {"id":44,"empName":"咨询师","empNumber":"A8723158","entryTime":1429027200000,"room":null,"sex":0,"createTime":null,"updateTime":null,"isDel":null,"position":null}
+             * evaluId : 2
+             */
+
+            private List<EmpAdvicesBean> empAdvices;
 
             public int getId() {
                 return id;
@@ -444,16 +469,41 @@ public class OrderDetail {
                 this.kqAdvice = kqAdvice;
             }
 
+            public Object getStartTime() {
+                return startTime;
+            }
+
+            public void setStartTime(Object startTime) {
+                this.startTime = startTime;
+            }
+
+            public Object getEndTime() {
+                return endTime;
+            }
+
+            public void setEndTime(Object endTime) {
+                this.endTime = endTime;
+            }
+
+            public List<EmpAdvicesBean> getEmpAdvices() {
+                return empAdvices;
+            }
+
+            public void setEmpAdvices(List<EmpAdvicesBean> empAdvices) {
+                this.empAdvices = empAdvices;
+            }
+
             public static class ReceptionBean {
                 private int id;
-                private Object uuid;
                 private String empName;
-                private Object positionId;
-                private Object entryTime;
+                private String empNumber;
+                private long entryTime;
+                private Object room;
                 private int sex;
                 private Object createTime;
                 private Object updateTime;
                 private Object isDel;
+                private Object position;
 
                 public int getId() {
                     return id;
@@ -461,14 +511,6 @@ public class OrderDetail {
 
                 public void setId(int id) {
                     this.id = id;
-                }
-
-                public Object getUuid() {
-                    return uuid;
-                }
-
-                public void setUuid(Object uuid) {
-                    this.uuid = uuid;
                 }
 
                 public String getEmpName() {
@@ -479,20 +521,28 @@ public class OrderDetail {
                     this.empName = empName;
                 }
 
-                public Object getPositionId() {
-                    return positionId;
+                public String getEmpNumber() {
+                    return empNumber;
                 }
 
-                public void setPositionId(Object positionId) {
-                    this.positionId = positionId;
+                public void setEmpNumber(String empNumber) {
+                    this.empNumber = empNumber;
                 }
 
-                public Object getEntryTime() {
+                public long getEntryTime() {
                     return entryTime;
                 }
 
-                public void setEntryTime(Object entryTime) {
+                public void setEntryTime(long entryTime) {
                     this.entryTime = entryTime;
+                }
+
+                public Object getRoom() {
+                    return room;
+                }
+
+                public void setRoom(Object room) {
+                    this.room = room;
                 }
 
                 public int getSex() {
@@ -525,19 +575,28 @@ public class OrderDetail {
 
                 public void setIsDel(Object isDel) {
                     this.isDel = isDel;
+                }
+
+                public Object getPosition() {
+                    return position;
+                }
+
+                public void setPosition(Object position) {
+                    this.position = position;
                 }
             }
 
             public static class AdviceBean {
                 private int id;
-                private Object uuid;
                 private String empName;
-                private Object positionId;
-                private Object entryTime;
+                private String empNumber;
+                private long entryTime;
+                private Object room;
                 private int sex;
                 private Object createTime;
                 private Object updateTime;
                 private Object isDel;
+                private Object position;
 
                 public int getId() {
                     return id;
@@ -547,14 +606,6 @@ public class OrderDetail {
                     this.id = id;
                 }
 
-                public Object getUuid() {
-                    return uuid;
-                }
-
-                public void setUuid(Object uuid) {
-                    this.uuid = uuid;
-                }
-
                 public String getEmpName() {
                     return empName;
                 }
@@ -563,20 +614,28 @@ public class OrderDetail {
                     this.empName = empName;
                 }
 
-                public Object getPositionId() {
-                    return positionId;
+                public String getEmpNumber() {
+                    return empNumber;
                 }
 
-                public void setPositionId(Object positionId) {
-                    this.positionId = positionId;
+                public void setEmpNumber(String empNumber) {
+                    this.empNumber = empNumber;
                 }
 
-                public Object getEntryTime() {
+                public long getEntryTime() {
                     return entryTime;
                 }
 
-                public void setEntryTime(Object entryTime) {
+                public void setEntryTime(long entryTime) {
                     this.entryTime = entryTime;
+                }
+
+                public Object getRoom() {
+                    return room;
+                }
+
+                public void setRoom(Object room) {
+                    this.room = room;
                 }
 
                 public int getSex() {
@@ -609,34 +668,35 @@ public class OrderDetail {
 
                 public void setIsDel(Object isDel) {
                     this.isDel = isDel;
+                }
+
+                public Object getPosition() {
+                    return position;
+                }
+
+                public void setPosition(Object position) {
+                    this.position = position;
                 }
             }
 
             public static class DoctorBean {
-                private Object id;
-                private Object uuid;
+                private int id;
                 private String empName;
-                private Object positionId;
-                private Object entryTime;
+                private String empNumber;
+                private long entryTime;
+                private Object room;
                 private int sex;
                 private Object createTime;
                 private Object updateTime;
                 private Object isDel;
+                private Object position;
 
-                public Object getId() {
+                public int getId() {
                     return id;
                 }
 
-                public void setId(Object id) {
+                public void setId(int id) {
                     this.id = id;
-                }
-
-                public Object getUuid() {
-                    return uuid;
-                }
-
-                public void setUuid(Object uuid) {
-                    this.uuid = uuid;
                 }
 
                 public String getEmpName() {
@@ -647,20 +707,28 @@ public class OrderDetail {
                     this.empName = empName;
                 }
 
-                public Object getPositionId() {
-                    return positionId;
+                public String getEmpNumber() {
+                    return empNumber;
                 }
 
-                public void setPositionId(Object positionId) {
-                    this.positionId = positionId;
+                public void setEmpNumber(String empNumber) {
+                    this.empNumber = empNumber;
                 }
 
-                public Object getEntryTime() {
+                public long getEntryTime() {
                     return entryTime;
                 }
 
-                public void setEntryTime(Object entryTime) {
+                public void setEntryTime(long entryTime) {
                     this.entryTime = entryTime;
+                }
+
+                public Object getRoom() {
+                    return room;
+                }
+
+                public void setRoom(Object room) {
+                    this.room = room;
                 }
 
                 public int getSex() {
@@ -693,34 +761,35 @@ public class OrderDetail {
 
                 public void setIsDel(Object isDel) {
                     this.isDel = isDel;
+                }
+
+                public Object getPosition() {
+                    return position;
+                }
+
+                public void setPosition(Object position) {
+                    this.position = position;
                 }
             }
 
             public static class DeveloperBean {
-                private Object id;
-                private Object uuid;
+                private int id;
                 private String empName;
-                private Object positionId;
-                private Object entryTime;
+                private String empNumber;
+                private long entryTime;
+                private Object room;
                 private int sex;
                 private Object createTime;
                 private Object updateTime;
                 private Object isDel;
+                private Object position;
 
-                public Object getId() {
+                public int getId() {
                     return id;
                 }
 
-                public void setId(Object id) {
+                public void setId(int id) {
                     this.id = id;
-                }
-
-                public Object getUuid() {
-                    return uuid;
-                }
-
-                public void setUuid(Object uuid) {
-                    this.uuid = uuid;
                 }
 
                 public String getEmpName() {
@@ -731,20 +800,28 @@ public class OrderDetail {
                     this.empName = empName;
                 }
 
-                public Object getPositionId() {
-                    return positionId;
+                public String getEmpNumber() {
+                    return empNumber;
                 }
 
-                public void setPositionId(Object positionId) {
-                    this.positionId = positionId;
+                public void setEmpNumber(String empNumber) {
+                    this.empNumber = empNumber;
                 }
 
-                public Object getEntryTime() {
+                public long getEntryTime() {
                     return entryTime;
                 }
 
-                public void setEntryTime(Object entryTime) {
+                public void setEntryTime(long entryTime) {
                     this.entryTime = entryTime;
+                }
+
+                public Object getRoom() {
+                    return room;
+                }
+
+                public void setRoom(Object room) {
+                    this.room = room;
                 }
 
                 public int getSex() {
@@ -777,6 +854,14 @@ public class OrderDetail {
 
                 public void setIsDel(Object isDel) {
                     this.isDel = isDel;
+                }
+
+                public Object getPosition() {
+                    return position;
+                }
+
+                public void setPosition(Object position) {
+                    this.position = position;
                 }
             }
 
@@ -785,18 +870,14 @@ public class OrderDetail {
                 private Object uuid;
                 private String title;
                 private String userId;
-                private String reception;
-                private String advice;
                 private String projectId;
-                private Object waitTime;
+                private String waitTime;
                 private Object depaId;
                 private int adviceStatus;
-                private String doctId;
-                private String devId;
                 private long lastTime;
                 private long adviceTime;
-                private Object createTime;
-                private Object updateTime;
+                private long createTime;
+                private long updateTime;
                 private Object isDel;
                 private String adviceNote;
 
@@ -832,22 +913,6 @@ public class OrderDetail {
                     this.userId = userId;
                 }
 
-                public String getReception() {
-                    return reception;
-                }
-
-                public void setReception(String reception) {
-                    this.reception = reception;
-                }
-
-                public String getAdvice() {
-                    return advice;
-                }
-
-                public void setAdvice(String advice) {
-                    this.advice = advice;
-                }
-
                 public String getProjectId() {
                     return projectId;
                 }
@@ -856,11 +921,11 @@ public class OrderDetail {
                     this.projectId = projectId;
                 }
 
-                public Object getWaitTime() {
+                public String getWaitTime() {
                     return waitTime;
                 }
 
-                public void setWaitTime(Object waitTime) {
+                public void setWaitTime(String waitTime) {
                     this.waitTime = waitTime;
                 }
 
@@ -880,22 +945,6 @@ public class OrderDetail {
                     this.adviceStatus = adviceStatus;
                 }
 
-                public String getDoctId() {
-                    return doctId;
-                }
-
-                public void setDoctId(String doctId) {
-                    this.doctId = doctId;
-                }
-
-                public String getDevId() {
-                    return devId;
-                }
-
-                public void setDevId(String devId) {
-                    this.devId = devId;
-                }
-
                 public long getLastTime() {
                     return lastTime;
                 }
@@ -912,19 +961,19 @@ public class OrderDetail {
                     this.adviceTime = adviceTime;
                 }
 
-                public Object getCreateTime() {
+                public long getCreateTime() {
                     return createTime;
                 }
 
-                public void setCreateTime(Object createTime) {
+                public void setCreateTime(long createTime) {
                     this.createTime = createTime;
                 }
 
-                public Object getUpdateTime() {
+                public long getUpdateTime() {
                     return updateTime;
                 }
 
-                public void setUpdateTime(Object updateTime) {
+                public void setUpdateTime(long updateTime) {
                     this.updateTime = updateTime;
                 }
 
@@ -944,6 +993,293 @@ public class OrderDetail {
                     this.adviceNote = adviceNote;
                 }
             }
+
+            public static class EmpAdvicesBean {
+                private int id;
+                private String adviceId;
+                private String empId;
+                private int empType;
+                private long serviceTime;
+                /**
+                 * id : 5
+                 * empName : 谷碧萱
+                 * empNumber : A8723119
+                 * entryTime : 1476979200000
+                 * room : null
+                 * sex : 0
+                 * createTime : null
+                 * updateTime : null
+                 * isDel : null
+                 * position : null
+                 */
+
+                private EmpInfoBean empInfo;
+                /**
+                 * id : 44
+                 * empName : 咨询师
+                 * empNumber : A8723158
+                 * entryTime : 1429027200000
+                 * room : null
+                 * sex : 0
+                 * createTime : null
+                 * updateTime : null
+                 * isDel : null
+                 * position : null
+                 */
+
+                private AdviserBean adviser;
+                private int evaluId;
+
+                public int getId() {
+                    return id;
+                }
+
+                public void setId(int id) {
+                    this.id = id;
+                }
+
+                public String getAdviceId() {
+                    return adviceId;
+                }
+
+                public void setAdviceId(String adviceId) {
+                    this.adviceId = adviceId;
+                }
+
+                public String getEmpId() {
+                    return empId;
+                }
+
+                public void setEmpId(String empId) {
+                    this.empId = empId;
+                }
+
+                public int getEmpType() {
+                    return empType;
+                }
+
+                public void setEmpType(int empType) {
+                    this.empType = empType;
+                }
+
+                public long getServiceTime() {
+                    return serviceTime;
+                }
+
+                public void setServiceTime(long serviceTime) {
+                    this.serviceTime = serviceTime;
+                }
+
+                public EmpInfoBean getEmpInfo() {
+                    return empInfo;
+                }
+
+                public void setEmpInfo(EmpInfoBean empInfo) {
+                    this.empInfo = empInfo;
+                }
+
+                public AdviserBean getAdviser() {
+                    return adviser;
+                }
+
+                public void setAdviser(AdviserBean adviser) {
+                    this.adviser = adviser;
+                }
+
+                public int getEvaluId() {
+                    return evaluId;
+                }
+
+                public void setEvaluId(int evaluId) {
+                    this.evaluId = evaluId;
+                }
+
+                public static class EmpInfoBean {
+                    private int id;
+                    private String empName;
+                    private String empNumber;
+                    private long entryTime;
+                    private Object room;
+                    private int sex;
+                    private Object createTime;
+                    private Object updateTime;
+                    private Object isDel;
+                    private Object position;
+
+                    public int getId() {
+                        return id;
+                    }
+
+                    public void setId(int id) {
+                        this.id = id;
+                    }
+
+                    public String getEmpName() {
+                        return empName;
+                    }
+
+                    public void setEmpName(String empName) {
+                        this.empName = empName;
+                    }
+
+                    public String getEmpNumber() {
+                        return empNumber;
+                    }
+
+                    public void setEmpNumber(String empNumber) {
+                        this.empNumber = empNumber;
+                    }
+
+                    public long getEntryTime() {
+                        return entryTime;
+                    }
+
+                    public void setEntryTime(long entryTime) {
+                        this.entryTime = entryTime;
+                    }
+
+                    public Object getRoom() {
+                        return room;
+                    }
+
+                    public void setRoom(Object room) {
+                        this.room = room;
+                    }
+
+                    public int getSex() {
+                        return sex;
+                    }
+
+                    public void setSex(int sex) {
+                        this.sex = sex;
+                    }
+
+                    public Object getCreateTime() {
+                        return createTime;
+                    }
+
+                    public void setCreateTime(Object createTime) {
+                        this.createTime = createTime;
+                    }
+
+                    public Object getUpdateTime() {
+                        return updateTime;
+                    }
+
+                    public void setUpdateTime(Object updateTime) {
+                        this.updateTime = updateTime;
+                    }
+
+                    public Object getIsDel() {
+                        return isDel;
+                    }
+
+                    public void setIsDel(Object isDel) {
+                        this.isDel = isDel;
+                    }
+
+                    public Object getPosition() {
+                        return position;
+                    }
+
+                    public void setPosition(Object position) {
+                        this.position = position;
+                    }
+                }
+
+                public static class AdviserBean {
+                    private int id;
+                    private String empName;
+                    private String empNumber;
+                    private long entryTime;
+                    private Object room;
+                    private int sex;
+                    private Object createTime;
+                    private Object updateTime;
+                    private Object isDel;
+                    private Object position;
+
+                    public int getId() {
+                        return id;
+                    }
+
+                    public void setId(int id) {
+                        this.id = id;
+                    }
+
+                    public String getEmpName() {
+                        return empName;
+                    }
+
+                    public void setEmpName(String empName) {
+                        this.empName = empName;
+                    }
+
+                    public String getEmpNumber() {
+                        return empNumber;
+                    }
+
+                    public void setEmpNumber(String empNumber) {
+                        this.empNumber = empNumber;
+                    }
+
+                    public long getEntryTime() {
+                        return entryTime;
+                    }
+
+                    public void setEntryTime(long entryTime) {
+                        this.entryTime = entryTime;
+                    }
+
+                    public Object getRoom() {
+                        return room;
+                    }
+
+                    public void setRoom(Object room) {
+                        this.room = room;
+                    }
+
+                    public int getSex() {
+                        return sex;
+                    }
+
+                    public void setSex(int sex) {
+                        this.sex = sex;
+                    }
+
+                    public Object getCreateTime() {
+                        return createTime;
+                    }
+
+                    public void setCreateTime(Object createTime) {
+                        this.createTime = createTime;
+                    }
+
+                    public Object getUpdateTime() {
+                        return updateTime;
+                    }
+
+                    public void setUpdateTime(Object updateTime) {
+                        this.updateTime = updateTime;
+                    }
+
+                    public Object getIsDel() {
+                        return isDel;
+                    }
+
+                    public void setIsDel(Object isDel) {
+                        this.isDel = isDel;
+                    }
+
+                    public Object getPosition() {
+                        return position;
+                    }
+
+                    public void setPosition(Object position) {
+                        this.position = position;
+                    }
+                }
+            }
         }
 
         public static class PackageSendBean {
@@ -952,17 +1288,17 @@ public class OrderDetail {
             private double packagePrice;
             private String content;
             /**
-             * id : 6
+             * id : 4
              * uuid : null
-             * proName : 割双眼皮
-             * proType : 2
+             * proName : 牙齿矫正
+             * proType : 8
              * referPrice : 参考价格描述内容
              * technology : 技术手段描述内容
              * course : 手术疗程描述内容
              * suitCrowds : 事宜人群描述内容
              * effect : 治疗效果描述内容
              * cycle : 治疗描述内容
-             * isHospital : 0
+             * isHospital : 1
              * createTime : null
              * updateTime : null
              * isDel : null
@@ -1185,8 +1521,12 @@ public class OrderDetail {
             private int level;
             private double preferPrice;
             private String referPrice;
+            private Object empIdList;
             private int preferStatus;
             private String note;
+            private Object reviewNote;
+            private Object applyTime;
+            private Object reviewTime;
 
             public int getId() {
                 return id;
@@ -1220,6 +1560,14 @@ public class OrderDetail {
                 this.referPrice = referPrice;
             }
 
+            public Object getEmpIdList() {
+                return empIdList;
+            }
+
+            public void setEmpIdList(Object empIdList) {
+                this.empIdList = empIdList;
+            }
+
             public int getPreferStatus() {
                 return preferStatus;
             }
@@ -1235,6 +1583,30 @@ public class OrderDetail {
             public void setNote(String note) {
                 this.note = note;
             }
+
+            public Object getReviewNote() {
+                return reviewNote;
+            }
+
+            public void setReviewNote(Object reviewNote) {
+                this.reviewNote = reviewNote;
+            }
+
+            public Object getApplyTime() {
+                return applyTime;
+            }
+
+            public void setApplyTime(Object applyTime) {
+                this.applyTime = applyTime;
+            }
+
+            public Object getReviewTime() {
+                return reviewTime;
+            }
+
+            public void setReviewTime(Object reviewTime) {
+                this.reviewTime = reviewTime;
+            }
         }
 
         public static class ProjectsBean {
@@ -1242,19 +1614,19 @@ public class OrderDetail {
             private double proPrice;
             private int proStatus;
             /**
-             * id : 41
+             * id : 4
              * uuid : null
              * proName : 牙齿矫正
-             * proType : 5
+             * proType : 8
              * referPrice : 参考价格描述内容
              * technology : 技术手段描述内容
              * course : 手术疗程描述内容
              * suitCrowds : 事宜人群描述内容
              * effect : 治疗效果描述内容
              * cycle : 治疗描述内容
-             * isHospital : 0
+             * isHospital : 1
              * createTime : 1477291406000
-             * updateTime : 1480577275000
+             * updateTime : 1481769723000
              * isDel : 0
              * matters : 术后事项描述内容
              * merits : 就是一个项目的优点描述
@@ -1466,26 +1838,32 @@ public class OrderDetail {
             private int id;
             private Object userName;
             /**
-             * id : 1
+             * id : 2
              * uuid : null
              * title : null
              * evaluTarget : null
              * evaluType : 1
              * star : null
              * status : 0
-             * createTime : null
-             * updateTime : null
+             * startTime : null
+             * endTime : null
+             * createTime : 1483607126000
+             * updateTime : 1483607126000
              * isDel : null
              * content : null
              */
 
             private KqEvaluBean kqEvalu;
             /**
-             * id : 1
+             * id : 5
              * uuid : null
-             * empName : 澹台醉波
+             * loginName : null
+             * passwd : null
+             * empName : 谷碧萱
              * positionId : null
+             * empNumber : null
              * entryTime : null
+             * room : null
              * sex : 0
              * createTime : null
              * updateTime : null
@@ -1532,12 +1910,14 @@ public class OrderDetail {
                 private Object title;
                 private Object evaluTarget;
                 private int evaluType;
-                private Object star;
+                private int star;
                 private int status;
-                private Object createTime;
-                private Object updateTime;
+                private Object startTime;
+                private Object endTime;
+                private long createTime;
+                private long updateTime;
                 private Object isDel;
-                private Object content;
+                private String content;
 
                 public int getId() {
                     return id;
@@ -1579,11 +1959,11 @@ public class OrderDetail {
                     this.evaluType = evaluType;
                 }
 
-                public Object getStar() {
+                public int getStar() {
                     return star;
                 }
 
-                public void setStar(Object star) {
+                public void setStar(int star) {
                     this.star = star;
                 }
 
@@ -1595,19 +1975,35 @@ public class OrderDetail {
                     this.status = status;
                 }
 
-                public Object getCreateTime() {
+                public Object getStartTime() {
+                    return startTime;
+                }
+
+                public void setStartTime(Object startTime) {
+                    this.startTime = startTime;
+                }
+
+                public Object getEndTime() {
+                    return endTime;
+                }
+
+                public void setEndTime(Object endTime) {
+                    this.endTime = endTime;
+                }
+
+                public long getCreateTime() {
                     return createTime;
                 }
 
-                public void setCreateTime(Object createTime) {
+                public void setCreateTime(long createTime) {
                     this.createTime = createTime;
                 }
 
-                public Object getUpdateTime() {
+                public long getUpdateTime() {
                     return updateTime;
                 }
 
-                public void setUpdateTime(Object updateTime) {
+                public void setUpdateTime(long updateTime) {
                     this.updateTime = updateTime;
                 }
 
@@ -1619,11 +2015,11 @@ public class OrderDetail {
                     this.isDel = isDel;
                 }
 
-                public Object getContent() {
+                public String getContent() {
                     return content;
                 }
 
-                public void setContent(Object content) {
+                public void setContent(String content) {
                     this.content = content;
                 }
             }
@@ -1631,9 +2027,13 @@ public class OrderDetail {
             public static class EmployeeBean {
                 private int id;
                 private Object uuid;
+                private Object loginName;
+                private Object passwd;
                 private String empName;
                 private Object positionId;
+                private Object empNumber;
                 private Object entryTime;
+                private Object room;
                 private int sex;
                 private Object createTime;
                 private Object updateTime;
@@ -1655,6 +2055,22 @@ public class OrderDetail {
                     this.uuid = uuid;
                 }
 
+                public Object getLoginName() {
+                    return loginName;
+                }
+
+                public void setLoginName(Object loginName) {
+                    this.loginName = loginName;
+                }
+
+                public Object getPasswd() {
+                    return passwd;
+                }
+
+                public void setPasswd(Object passwd) {
+                    this.passwd = passwd;
+                }
+
                 public String getEmpName() {
                     return empName;
                 }
@@ -1671,12 +2087,28 @@ public class OrderDetail {
                     this.positionId = positionId;
                 }
 
+                public Object getEmpNumber() {
+                    return empNumber;
+                }
+
+                public void setEmpNumber(Object empNumber) {
+                    this.empNumber = empNumber;
+                }
+
                 public Object getEntryTime() {
                     return entryTime;
                 }
 
                 public void setEntryTime(Object entryTime) {
                     this.entryTime = entryTime;
+                }
+
+                public Object getRoom() {
+                    return room;
+                }
+
+                public void setRoom(Object room) {
+                    this.room = room;
                 }
 
                 public int getSex() {
@@ -1715,16 +2147,22 @@ public class OrderDetail {
 
         public static class FeedbacksBean {
             private int id;
+            private int type;
             private String content;
+            private int evaluId;
+            private long createTime;
+            private long updateTime;
             /**
-             * id : 7
-             * empName : 伯虹玉
+             * id : 42
+             * empName : 东门巧蕊
+             * empNumber : A8723156
              * entryTime : null
+             * room : null
              * sex : 0
              * createTime : null
              * updateTime : null
              * isDel : null
-             * position : {"id":2,"uuid":null,"positionName":"咨询师","room":null,"createTime":null,"updateTime":null,"isDel":null}
+             * position : {"id":11,"uuid":null,"positionName":"培训老师","createTime":null,"updateTime":null,"isDel":null}
              */
 
             private EmpInfoBean empInfo;
@@ -1737,12 +2175,44 @@ public class OrderDetail {
                 this.id = id;
             }
 
+            public int getType() {
+                return type;
+            }
+
+            public void setType(int type) {
+                this.type = type;
+            }
+
             public String getContent() {
                 return content;
             }
 
             public void setContent(String content) {
                 this.content = content;
+            }
+
+            public int getEvaluId() {
+                return evaluId;
+            }
+
+            public void setEvaluId(int evaluId) {
+                this.evaluId = evaluId;
+            }
+
+            public long getCreateTime() {
+                return createTime;
+            }
+
+            public void setCreateTime(long createTime) {
+                this.createTime = createTime;
+            }
+
+            public long getUpdateTime() {
+                return updateTime;
+            }
+
+            public void setUpdateTime(long updateTime) {
+                this.updateTime = updateTime;
             }
 
             public EmpInfoBean getEmpInfo() {
@@ -1756,16 +2226,17 @@ public class OrderDetail {
             public static class EmpInfoBean {
                 private int id;
                 private String empName;
+                private String empNumber;
                 private Object entryTime;
+                private Object room;
                 private int sex;
                 private Object createTime;
                 private Object updateTime;
                 private Object isDel;
                 /**
-                 * id : 2
+                 * id : 11
                  * uuid : null
-                 * positionName : 咨询师
-                 * room : null
+                 * positionName : 培训老师
                  * createTime : null
                  * updateTime : null
                  * isDel : null
@@ -1789,12 +2260,28 @@ public class OrderDetail {
                     this.empName = empName;
                 }
 
+                public String getEmpNumber() {
+                    return empNumber;
+                }
+
+                public void setEmpNumber(String empNumber) {
+                    this.empNumber = empNumber;
+                }
+
                 public Object getEntryTime() {
                     return entryTime;
                 }
 
                 public void setEntryTime(Object entryTime) {
                     this.entryTime = entryTime;
+                }
+
+                public Object getRoom() {
+                    return room;
+                }
+
+                public void setRoom(Object room) {
+                    this.room = room;
                 }
 
                 public int getSex() {
@@ -1841,7 +2328,6 @@ public class OrderDetail {
                     private int id;
                     private Object uuid;
                     private String positionName;
-                    private Object room;
                     private Object createTime;
                     private Object updateTime;
                     private Object isDel;
@@ -1868,14 +2354,6 @@ public class OrderDetail {
 
                     public void setPositionName(String positionName) {
                         this.positionName = positionName;
-                    }
-
-                    public Object getRoom() {
-                        return room;
-                    }
-
-                    public void setRoom(Object room) {
-                        this.room = room;
                     }
 
                     public Object getCreateTime() {

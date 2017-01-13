@@ -44,4 +44,10 @@ public interface BaseModel<T> {
     interface UpdateEmpModel{
         void netWorkUpdateEmp(Map<String,String> map,BaseDataBridge.UpdataEmpData updataEmpData);
     }
+    interface UpdateEvaluModel{
+        void netWorkUpdateEvalu(Map<String,String> map,BaseDataBridge.UpdateEvaluData updateEvaluData);
+    }
+    interface ReviewPreferenModel{
+        void netWorkReviewPreferen(Map<String,String> map,BaseDataBridge.ReviewPreferenData reviewPreferenData);
+    }
 }

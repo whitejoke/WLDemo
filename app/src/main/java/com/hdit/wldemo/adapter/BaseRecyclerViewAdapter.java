@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hdit.wldemo.mvp.Bean.OrderDetail;
 import com.hdit.wldemo.utils.UIUtils;
 
 import java.util.LinkedList;
@@ -28,6 +29,8 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Re
     private OnItemLongClickListener<T> mOnLongClickListener;
     private boolean showFoot = false;
 
+    protected List<OrderDetail.RowsBean.EvaluDetailsBean> mBase=new LinkedList<>();
+
     public BaseRecyclerViewAdapter(List<T> datas) {
         if (datas != null) {
             mDatas = datas;
@@ -37,6 +40,10 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Re
 
     public void addAll(List<T> datas) {
         mDatas.addAll(datas);
+    }
+
+    public void addBase(List<OrderDetail.RowsBean.EvaluDetailsBean> mDatas){
+        this.mBase=mDatas;
     }
 
     public void addItemTop(List<T> datas) {

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/head_toolbar"/>
+
     <com.cjj.MaterialRefreshLayout
         android:id="@+id/srf_layout"
         android:layout_width="match_parent"
@@ -117,7 +118,6 @@
 
 
     </com.cjj.MaterialRefreshLayout>
-
 
 
 </LinearLayout>

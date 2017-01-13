@@ -82,4 +82,12 @@ public interface BaseView<T> {
         void setData(PostNoBean datas);
         void netWorkError();
     }
+    interface updateEvalu{
+        void setData(PostNoBean datas);
+        void netWorkError();
+    }
+    interface reviewPreferen{
+        void setData(PostNoBean datas);
+        void netWorkError();
+    }
 }

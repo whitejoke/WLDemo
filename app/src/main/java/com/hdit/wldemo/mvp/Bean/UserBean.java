@@ -152,13 +152,13 @@ public class UserBean implements Serializable{
 
             public static class CustoInfoBean {
                 private int id;
-                private Object uuid;
+                private String uuid;
                 private Object userName;
                 private Object userId;
                 private int age;
                 private String birthday;
                 private Object occupa;
-                private Object sex;
+                private int sex;
                 private String telphone;
                 private Object idNum;
                 private Object email;
@@ -192,11 +192,11 @@ public class UserBean implements Serializable{
                     this.id = id;
                 }
 
-                public Object getUuid() {
+                public String getUuid() {
                     return uuid;
                 }
 
-                public void setUuid(Object uuid) {
+                public void setUuid(String uuid) {
                     this.uuid = uuid;
                 }
 
@@ -240,11 +240,11 @@ public class UserBean implements Serializable{
                     this.occupa = occupa;
                 }
 
-                public Object getSex() {
+                public int getSex() {
                     return sex;
                 }
 
-                public void setSex(Object sex) {
+                public void setSex(int sex) {
                     this.sex = sex;
                 }
 

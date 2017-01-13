@@ -134,6 +134,8 @@ public class HomeFragment extends BaseFragment implements BaseView.HomeView, Bas
         }
         if (!datas.getResult().getData().getNews().isEmpty()){
             list_bottom.clear();
+//            list_bottom.addAll(datas.getResult().getData().getNews());
+//            homeBottomAdapter.addAll(list_bottom);
             homeBottomAdapter.addAll(datas.getResult().getData().getNews());
             recyclerView.setAdapter(homeBottomAdapter);
         }

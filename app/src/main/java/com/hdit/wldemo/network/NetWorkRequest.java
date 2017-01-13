@@ -101,4 +101,18 @@ public class NetWorkRequest {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
     }
+    public static void updateEvalu(Map<String,String> map,Subscriber<PostNoBean> subscriber){
+        rxUtils.unsubscribe();
+        rxUtils.subscription=Network.getWlApi().postUpdateEvalu(map)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(subscriber);
+    }
+    public static void reviewPreferen(Map<String,String> map,Subscriber<PostNoBean> subscriber){
+        rxUtils.unsubscribe();
+        rxUtils.subscription=Network.getWlApi().postReviewPreferen(map)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(subscriber);
+    }
 }
