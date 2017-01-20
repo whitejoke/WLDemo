@@ -52,6 +52,7 @@ public class MinePostOrderActivity extends BaseNewActivity implements BaseView.o
     private Map<String,String> map;
 
     private boolean type=true;
+    private int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,9 +71,11 @@ public class MinePostOrderActivity extends BaseNewActivity implements BaseView.o
             }
         });
 
+        id=sharedPreferences.getInt("id",0);
+
         orderDetailPresenter=new OrderDetailPresenterImpl(this);
         map=new HashMap<>();
-        map.put("userId","7");
+        map.put("userId", String.valueOf(id));
         map.put("order","desc");
         map.put("sort","create_time");
         orderDetailPresenter.requestNetWork(map);

@@ -135,6 +135,7 @@ public class MineMedicalOrderActivity extends BaseNewActivity implements BaseVie
     private String telephone;
     private String name;
     private int sex;
+    private  int id;
     private String[] sexArray={"女","男"};
     private boolean isHave=false;
     private OrderDetail orderDetail=new OrderDetail();
@@ -162,7 +163,7 @@ public class MineMedicalOrderActivity extends BaseNewActivity implements BaseVie
         telephone=sharedPreferences.getString("phone",null);
         name=sharedPreferences.getString("name",null);
         sex=sharedPreferences.getInt("sex",0);
-
+        id=sharedPreferences.getInt("id",0);
 
         //前台
         prosceniumAdapter=new ProsceniumAdapter(empAdvicesList,proEvaluList);
@@ -207,7 +208,7 @@ public class MineMedicalOrderActivity extends BaseNewActivity implements BaseVie
 
         orderDetailPresenter=new OrderDetailPresenterImpl(this);
         map=new HashMap<>();
-        map.put("userId","7");
+        map.put("userId", String.valueOf(id));
         map.put("order","desc");
         map.put("sort","create_time");
         orderDetailPresenter.requestNetWork(map);
@@ -244,10 +245,16 @@ public class MineMedicalOrderActivity extends BaseNewActivity implements BaseVie
         }
     }
     private void showFeedBack(OrderDetail datas) {
-        feedbacksBeanList.clear();
-        feedbackAdapter.addBase(datas.getRows().get(0).getEvaluDetails());
-        feedbackAdapter.addAll(datas.getRows().get(0).getFeedbacks());
-        feedbackRecycle.setAdapter(feedbackAdapter);
+        if (datas.getRows().get(0).getFeedbacks()!=null){
+            feedbackRecycle.setVisibility(View.VISIBLE);
+            feedbacksBeanList.clear();
+            feedbackAdapter.addBase(datas.getRows().get(0).getEvaluDetails());
+            feedbackAdapter.addAll(datas.getRows().get(0).getFeedbacks());
+            feedbackRecycle.setAdapter(feedbackAdapter);
+        }else {
+            feedbackRecycle.setVisibility(View.GONE);
+        }
+
     }
 
     private void showMedicalOrder(OrderDetail datas) {
@@ -339,9 +346,14 @@ public class MineMedicalOrderActivity extends BaseNewActivity implements BaseVie
         //订单号
         counselorOrderNum.setText(datas.getRows().get(0).getKqOrder().getOrderNum());
         //优惠
-        preferDetailsList.clear();
-        favorableAdapter.addAll(datas.getRows().get(0).getPreferDetails());
-        favorableRecycler.setAdapter(favorableAdapter);
+        if (datas.getRows().get(0).getPreferDetails()!=null){
+            favorableRecycler.setVisibility(View.VISIBLE);
+            preferDetailsList.clear();
+            favorableAdapter.addAll(datas.getRows().get(0).getPreferDetails());
+            favorableRecycler.setAdapter(favorableAdapter);
+        }else {
+            favorableRecycler.setVisibility(View.GONE);
+        }
         //评论
         couEvaluList.clear();
         for (int i=0;i<empCounselorList.size();i++){

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.hdit.wldemo.R;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
+import com.hdit.wldemo.utils.GlobalInfo;
 import com.hdit.wldemo.utils.ImageLoaderUtils;
 import com.hdit.wldemo.utils.UIUtils;
 
@@ -29,8 +30,8 @@ public class CosmetologyAdapter extends BaseRecyclerViewAdapter<HomeBean.ResultB
 
     @Override
     protected void onBind(RecyclerView.ViewHolder holder, int position, HomeBean.ResultBean.DataBean.NewsBean data) {
-        if (holder instanceof CosmetologyAdapter.ViewHolder) {
-            ((CosmetologyAdapter.ViewHolder) holder).setData(data);
+        if (holder instanceof ViewHolder) {
+            ((ViewHolder) holder).setData(data);
         }
     }
 
@@ -55,8 +56,8 @@ public class CosmetologyAdapter extends BaseRecyclerViewAdapter<HomeBean.ResultB
         @Override
         protected void setData(@NonNull HomeBean.ResultBean.DataBean.NewsBean data) {
             super.setData(data);
-            cosmetologyContent.setText(data.getContent());
-            ImageLoaderUtils.display(UIUtils.getActivity(), cosmetologyImg, data.getImageUrl());
+            cosmetologyContent.setText(GlobalInfo.delHTMLTag(data.getContent()));
+            ImageLoaderUtils.display(UIUtils.getContext(),cosmetologyImg, data.getImageUrl());
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.hdit.wldemo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,13 +11,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hdit.wldemo.R;
+import com.hdit.wldemo.adapter.BaseRecyclerViewAdapter;
 import com.hdit.wldemo.adapter.CosmetologyAdapter;
 import com.hdit.wldemo.constant.Constant;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
 import com.hdit.wldemo.mvp.presenter.BasePresenter;
 import com.hdit.wldemo.mvp.presenter.HomePresenterImpl;
 import com.hdit.wldemo.mvp.view.BaseView;
-import com.hdit.wldemo.utils.ActivityUtils;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -29,7 +30,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/24.
  */
 
-public class CosmetologyActivity extends BaseNewActivity implements BaseView.HomeView{
+public class CosmetologyActivity extends BaseNewActivity implements BaseView.HomeView, BaseRecyclerViewAdapter.OnItemClickListener<HomeBean.ResultBean.DataBean.NewsBean> {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -50,10 +51,6 @@ public class CosmetologyActivity extends BaseNewActivity implements BaseView.Hom
     int pageNum=1;
     int pageSize=10;
 
-    public static void startIntent() {
-        Bundle bundle = new Bundle();
-        ActivityUtils.startActivity(CosmetologyActivity.class, bundle);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,9 +73,11 @@ public class CosmetologyActivity extends BaseNewActivity implements BaseView.Hom
         map.put("pageSize",pageSize);
         homePresenter=new HomePresenterImpl(this);
         homePresenter.requestNetWork(map);
+
         cosmetologyAdapter=new CosmetologyAdapter(list);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(Constant.RECYCLERVIEW_LINEAR, LinearLayoutManager.VERTICAL));
         //recyclerView.addItemDecoration(new RecycleViewDivider(getActivity(), LinearLayoutManager.VERTICAL));
+        cosmetologyAdapter.setOnItemClickListener(this);
     }
 
     @Override
@@ -96,6 +95,15 @@ public class CosmetologyActivity extends BaseNewActivity implements BaseView.Hom
 
     @Override
     public void netWorkError() {
+        Toast("出错啦");
+    }
 
+    @Override
+    public void onItemClick(View view, int position, HomeBean.ResultBean.DataBean.NewsBean info) {
+        Intent intent=new Intent();
+        intent.setClass(getActivity(), DetailActivity.class);
+        intent.putExtra("content",info.getContent());
+        intent.putExtra("id",info.getId());
+        startActivity(intent);
     }
 }

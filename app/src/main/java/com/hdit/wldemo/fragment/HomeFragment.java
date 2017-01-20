@@ -163,7 +163,10 @@ public class HomeFragment extends BaseFragment implements BaseView.HomeView, Bas
         Intent intent;
         switch (v.getId()){
             case R.id.home_more:
-                CosmetologyActivity.startIntent();
+                intent=new Intent();
+                intent.setClass(getActivity(),CosmetologyActivity.class);
+                startActivity(intent);
+                //CosmetologyActivity.startIntent();
                 break;
             case R.id.btn_register:
 

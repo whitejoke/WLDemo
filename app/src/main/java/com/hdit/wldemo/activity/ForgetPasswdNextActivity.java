@@ -16,7 +16,6 @@ import com.hdit.wldemo.mvp.Bean.ForgetPasswordBean;
 import com.hdit.wldemo.mvp.presenter.BasePresenter;
 import com.hdit.wldemo.mvp.presenter.ForgetPasswdPresenterImpl;
 import com.hdit.wldemo.mvp.view.BaseView;
-import com.hdit.wldemo.utils.LogUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -69,7 +68,6 @@ public class ForgetPasswdNextActivity extends BaseNewActivity implements BaseVie
 
         code=getIntent().getIntExtra("code",0);
         email=getIntent().getStringExtra("email");
-        LogUtils.i("susu", String.valueOf(code)+"----------"+email);
         forgetPasswdPresenter=new ForgetPasswdPresenterImpl(this);
         btnRecognition.setOnClickListener(new View.OnClickListener() {
             @Override

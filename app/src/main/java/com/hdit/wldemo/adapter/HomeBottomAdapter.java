@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.hdit.wldemo.R;
 import com.hdit.wldemo.mvp.Bean.HomeBean;
+import com.hdit.wldemo.utils.GlobalInfo;
 import com.hdit.wldemo.utils.ImageLoaderUtils;
 import com.hdit.wldemo.utils.UIUtils;
 
@@ -68,7 +69,7 @@ public class HomeBottomAdapter extends BaseRecyclerViewAdapter<HomeBean.ResultBe
         protected void setData(@NonNull HomeBean.ResultBean.DataBean.NewsBean data) {
             super.setData(data);
             homeBottomTitle.setText(data.getTitle());
-            homeBottomContent.setText(data.getContent());
+            homeBottomContent.setText(GlobalInfo.delHTMLTag(data.getContent()));
             ImageLoaderUtils.display(UIUtils.getActivity(), homeImage, data.getImageUrl());
         }
     }

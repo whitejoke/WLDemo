@@ -1,10 +1,13 @@
 package com.hdit.wldemo.activity;
 
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.webkit.WebView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.hdit.wldemo.R;
-import com.hdit.wldemo.utils.ActivityUtils;
 
 import butterknife.Bind;
 
@@ -13,6 +16,14 @@ import butterknife.Bind;
  */
 
 public class DetailActivity extends BaseNewActivity {
+    @Bind(R.id.toolbar)
+    Toolbar toolbar;
+    @Bind(R.id.toolbar_title)
+    TextView toolbarTitle;
+    @Bind(R.id.toolbar_right)
+    ImageView toolbarRight;
+    @Bind(R.id.toolbar_image)
+    ImageView toolbarLeft;
 
     @Bind(R.id.webView)
     WebView webView;
@@ -21,22 +32,26 @@ public class DetailActivity extends BaseNewActivity {
     String content=null;
 
 
-    public static void startIntent(int id, String content) {
-        Bundle bundle = new Bundle();
-        bundle.putInt("id", id);
-        bundle.putString("content", content);
-        ActivityUtils.startActivity(DetailActivity.class, bundle);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getBundle();
         init();
     }
 
     private void init() {
+
+        toolbarTitle.setText("美容知识");
+        toolbar.setNavigationIcon(R.mipmap.toolbar_left);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         content=getIntent().getStringExtra("content");
+        webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setLoadWithOverviewMode(true);
         webView.loadDataWithBaseURL(null,content,"text/html","utf-8",null);
     }
 
@@ -45,11 +60,4 @@ public class DetailActivity extends BaseNewActivity {
         return R.layout.activity_webview;
     }
 
-//    private void getBundle() {
-//        Bundle bundle = getIntent().getExtras();
-//        if (null != bundle && !bundle.isEmpty()) {
-//            id = bundle.getInt("id");
-//            content=bundle.getString("content");
-//        }
-//    }
 }

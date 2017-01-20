@@ -6,7 +6,8 @@ package com.hdit.wldemo.network;
 
 public class Api {
     //薇琳Api
-    public static final String BASE_API_WL = "http://192.168.1.188:8070/";
+    //public static final String BASE_API_WL = "http://192.168.1.188:8070/";
+    public static final String BASE_API_WL = "http://118.178.240.16:8080/WeiLinKQ/";
     //public static final String BASE_API_WL = "http://192.168.1.113:8080/WeiLinKQ/";
 
     //注册

@@ -146,6 +146,7 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
     private String telephone;
     private String name;
     private int sex;
+    private int id;
     private String[] sexArray={"女","男"};
     private boolean isHave=false;
     private OrderDetail orderDetail=new OrderDetail();
@@ -170,7 +171,7 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
         telephone=sharedPreferences.getString("phone",null);
         name=sharedPreferences.getString("name",null);
         sex=sharedPreferences.getInt("sex",0);
-
+        id=sharedPreferences.getInt("id",0);
 
         //前台
         prosceniumAdapter=new ProsceniumAdapter(empAdvicesList,proEvaluList);
@@ -215,7 +216,7 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
 
         orderDetailPresenter=new OrderDetailPresenterImpl(this);
         map=new HashMap<>();
-        map.put("userId","7");
+        map.put("userId", String.valueOf(id));
         map.put("order","desc");
         map.put("sort","create_time");
         orderDetailPresenter.requestNetWork(map);
@@ -353,9 +354,13 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
         //订单号
         counselorOrderNum.setText(datas.getRows().get(0).getKqOrder().getOrderNum());
         //优惠
-        preferDetailsList.clear();
-        favorableAdapter.addAll(datas.getRows().get(0).getPreferDetails());
-        favorableRecycler.setAdapter(favorableAdapter);
+        if (datas.getRows().get(0).getPreferDetails()!=null){
+            preferDetailsList.clear();
+            favorableAdapter.addAll(datas.getRows().get(0).getPreferDetails());
+            favorableRecycler.setAdapter(favorableAdapter);
+        }else {
+            favorableRecycler.setVisibility(View.GONE);
+        }
         //评论
         couEvaluList.clear();
         for (int i=0;i<empCounselorList.size();i++){
