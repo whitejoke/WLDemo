@@ -3,6 +3,7 @@ package com.hdit.wldemo.activity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -52,6 +53,7 @@ public class DetailActivity extends BaseNewActivity {
         content=getIntent().getStringExtra("content");
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
+        webView.getSettings().setTextSize(WebSettings.TextSize.LARGER);
         webView.loadDataWithBaseURL(null,content,"text/html","utf-8",null);
     }
 
