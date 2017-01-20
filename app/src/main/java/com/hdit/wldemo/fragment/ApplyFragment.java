@@ -17,7 +17,6 @@ import com.hdit.wldemo.mvp.Bean.ApplyBean;
 import com.hdit.wldemo.mvp.presenter.ApplyPresenterImpl;
 import com.hdit.wldemo.mvp.presenter.BasePresenter;
 import com.hdit.wldemo.mvp.view.BaseView;
-import com.hdit.wldemo.utils.LogUtils;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -39,7 +38,6 @@ public class ApplyFragment extends LazyFragment implements BaseView.applyDetail{
     private List<ApplyBean.RowsBean> listThird=new LinkedList<>();
 
     public static ApplyFragment newInstance(int pagerCount) {
-        LogUtils.i("susu", String.valueOf(pagerCount));
         Bundle bundle = new Bundle();
         bundle.putInt("TAG", pagerCount);
         ApplyFragment fragment = new ApplyFragment();
@@ -67,6 +65,7 @@ public class ApplyFragment extends LazyFragment implements BaseView.applyDetail{
 
     @Override
     protected void initData() {
+        //使用懒加载解决第一个不能显示问题
         if (!isPrepared || !isVisible ) {
             return;
         }
@@ -95,8 +94,6 @@ public class ApplyFragment extends LazyFragment implements BaseView.applyDetail{
                 refreshLayout.finishRefresh();
             }
         });
-
-        applyRecylerView.setLayoutManager(new LinearLayoutManager(getContext()));
         //applyRecylerView.addItemDecoration(new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL_LIST));
     }
 
@@ -115,6 +112,7 @@ public class ApplyFragment extends LazyFragment implements BaseView.applyDetail{
                     listThird.add(datas.getRows().get(i));
                 }
             }
+            applyRecylerView.setLayoutManager(new LinearLayoutManager(getContext()));
             applyRecylerView.setAdapter(applyAdapter);
         }
     }

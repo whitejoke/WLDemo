@@ -31,11 +31,12 @@ public class DetailActivity extends BaseNewActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getBundle();
+//        getBundle();
         init();
     }
 
     private void init() {
+        content=getIntent().getStringExtra("content");
         webView.loadDataWithBaseURL(null,content,"text/html","utf-8",null);
     }
 
@@ -44,11 +45,11 @@ public class DetailActivity extends BaseNewActivity {
         return R.layout.activity_webview;
     }
 
-    private void getBundle() {
-        Bundle bundle = getIntent().getExtras();
-        if (null != bundle && !bundle.isEmpty()) {
-            id = bundle.getInt("id");
-            content=bundle.getString("content");
-        }
-    }
+//    private void getBundle() {
+//        Bundle bundle = getIntent().getExtras();
+//        if (null != bundle && !bundle.isEmpty()) {
+//            id = bundle.getInt("id");
+//            content=bundle.getString("content");
+//        }
+//    }
 }

@@ -2,6 +2,7 @@ package com.hdit.wldemo.fragment;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -108,6 +109,9 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
     @Bind(R.id.feedback_recycle)
     RecyclerView feedbackRecycle;
 
+    @Bind(R.id.tv_none)
+    TextView tvNone;
+
     private SharedPreferences sharedPreferences;
     private BasePresenter.orderDetailPresenter orderDetailPresenter;
     //前台
@@ -146,6 +150,14 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
     private boolean isHave=false;
     private OrderDetail orderDetail=new OrderDetail();
     private Map<String, String> map=new HashMap<>();
+
+    public static FlowFragment newInstance(int type) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("TAG", type);
+        FlowFragment fragment = new FlowFragment();
+        fragment.setArguments(bundle);
+        return fragment;
+    }
 
     @Override
     protected View initView() {
@@ -231,10 +243,18 @@ public class FlowFragment extends BaseFragment implements BaseView.orderDetail {
         orderDetail=datas;
         //LogUtils.i("susu",orderDetail.getRows().get(0).getKqOrder().getOrderNum());
         //LogUtils.i("susu",orderDetail.getRows().get(0).getKqOrder().getOrderNum());
-        showProscenium(datas);
-        showCounselor(datas);
-        showMedicalOrder(datas);
-        showFeedBack(datas);
+        if (datas.getRows().get(0).getType()!=-1&&!datas.getRows().isEmpty()){
+            tvNone.setVisibility(View.GONE);
+            refreshLayout.setVisibility(View.VISIBLE);
+            showProscenium(datas);
+            showCounselor(datas);
+            showMedicalOrder(datas);
+            showFeedBack(datas);
+        }else {
+            tvNone.setVisibility(View.VISIBLE);
+            refreshLayout.setVisibility(View.GONE);
+        }
+
     }
 
     private void showFeedBack(OrderDetail datas) {

@@ -1,13 +1,27 @@
 package com.hdit.wldemo.activity;
 
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.cjj.MaterialRefreshLayout;
+import com.cjj.MaterialRefreshListener;
 import com.hdit.wldemo.R;
-import com.hdit.wldemo.utils.ActivityUtils;
+import com.hdit.wldemo.adapter.PostOrderAdapter;
+import com.hdit.wldemo.mvp.Bean.OrderDetail;
+import com.hdit.wldemo.mvp.presenter.BasePresenter;
+import com.hdit.wldemo.mvp.presenter.OrderDetailPresenterImpl;
+import com.hdit.wldemo.mvp.view.BaseView;
+import com.hdit.wldemo.utils.DividerItemDecoration;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 import butterknife.Bind;
 
@@ -15,7 +29,7 @@ import butterknife.Bind;
  * Created by joker on 2016/11/17.
  */
 
-public class MinePostOrderActivity extends BaseNewActivity {
+public class MinePostOrderActivity extends BaseNewActivity implements BaseView.orderDetail {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -25,11 +39,19 @@ public class MinePostOrderActivity extends BaseNewActivity {
     ImageView toolbarRight;
     @Bind(R.id.toolbar_image)
     ImageView toolbarLeft;
-    public static void startIntent() {
-        Bundle bundle = new Bundle();
-        // bundle.putSerializable("user", userBean);
-        ActivityUtils.startActivity(MinePostOrderActivity.class, bundle);
-    }
+    @Bind(R.id.refresh_layout)
+    MaterialRefreshLayout refreshLayout;
+    @Bind(R.id.post_recycler)
+    RecyclerView postRecycler;
+    @Bind(R.id.tv_none)
+    TextView tvNone;
+
+    private BasePresenter.orderDetailPresenter orderDetailPresenter;
+    private PostOrderAdapter postOrderAdapter;
+    private List<OrderDetail.RowsBean> list=new LinkedList<>();
+    private Map<String,String> map;
+
+    private boolean type=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +69,54 @@ public class MinePostOrderActivity extends BaseNewActivity {
                 finish();
             }
         });
+
+        orderDetailPresenter=new OrderDetailPresenterImpl(this);
+        map=new HashMap<>();
+        map.put("userId","7");
+        map.put("order","desc");
+        map.put("sort","create_time");
+        orderDetailPresenter.requestNetWork(map);
+
+        postOrderAdapter=new PostOrderAdapter(list);
+        postRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        postRecycler.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL_LIST));
+
+        refreshLayout.setMaterialRefreshListener(new MaterialRefreshListener() {
+            @Override
+            public void onRefresh(MaterialRefreshLayout materialRefreshLayout) {
+                orderDetailPresenter.requestNetWork(map);
+                refreshLayout.finishRefresh();
+            }
+        });
     }
 
     @Override
     protected int getLayoutId() {
         return R.layout.mine_past_order;
+    }
+
+    @Override
+    public void setData(OrderDetail datas) {
+        for (int i=0;i<datas.getRows().size();i++){
+            if (datas.getRows().get(i).getType()==-1){
+                type=false;
+                break;
+            }
+        }
+        if (!datas.getRows().isEmpty()&&type==true){
+            tvNone.setVisibility(View.GONE);
+            refreshLayout.setVisibility(View.VISIBLE);
+            list.clear();
+            postOrderAdapter.addAll(datas.getRows());
+            postRecycler.setAdapter(postOrderAdapter);
+        }else {
+            tvNone.setVisibility(View.VISIBLE);
+            refreshLayout.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public void netWorkError() {
+        Toast("出错啦");
     }
 }

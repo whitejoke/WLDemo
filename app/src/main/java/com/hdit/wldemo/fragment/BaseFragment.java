@@ -28,6 +28,7 @@ public abstract class BaseFragment extends Fragment {
     protected boolean isNull = false;
     protected View view;
     public MainActivity activity;
+    private View mViewContent;
 
 
     @Override
@@ -43,9 +44,17 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         activity= (MainActivity) getActivity();
-        View view = initView();
-        ButterKnife.bind(this, view);
-        return view;
+        if (mViewContent == null) {
+            mViewContent = initView();
+        }
+        // 缓存View判断是否含有parent, 如果有需要从parent删除, 否则发生已有parent的错误.
+        ViewGroup parent = (ViewGroup) mViewContent.getParent();
+        if (parent != null) {
+            parent.removeView(mViewContent);
+        }
+
+        ButterKnife.bind(this, mViewContent);
+        return mViewContent;
     }
 
     @Override

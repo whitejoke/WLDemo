@@ -14,6 +14,7 @@ import com.cjj.MaterialRefreshLayout;
 import com.cjj.MaterialRefreshListener;
 import com.hdit.wldemo.R;
 import com.hdit.wldemo.activity.CosmetologyActivity;
+import com.hdit.wldemo.activity.DetailActivity;
 import com.hdit.wldemo.activity.LoginActivity;
 import com.hdit.wldemo.adapter.BaseRecyclerViewAdapter;
 import com.hdit.wldemo.adapter.HomeBottomAdapter;
@@ -149,7 +150,12 @@ public class HomeFragment extends BaseFragment implements BaseView.HomeView, Bas
 
     @Override
     public void onItemClick(View view, int position, HomeBean.ResultBean.DataBean.NewsBean info) {
-        homePresenter.onClick(info);
+//        homePresenter.onClick(info);
+        Intent intent=new Intent();
+        intent.setClass(getActivity(), DetailActivity.class);
+        intent.putExtra("content",info.getContent());
+        intent.putExtra("id",info.getId());
+        startActivity(intent);
     }
 
     @Override

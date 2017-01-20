@@ -46,7 +46,7 @@ public class BusinessFragment extends BaseFragment {
         toolbarTitle.setText("业务处理");
         toolbar.setBackgroundResource(R.color.white);
 
-        adapter=new FragmentAdapter(getFragmentManager(),getActivity());
+        adapter=new FragmentAdapter(getChildFragmentManager(),getActivity());//使用getChildFragmentManager，不能使用getFragmentManager不然会报错
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);//将tablayout与viewPager关联起来
         tabLayout.setTabMode(TabLayout.MODE_FIXED);

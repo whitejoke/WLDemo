@@ -1,12 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:cropToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/head_toolbar"/>
-    <com.hdit.wldemo.widget.MyRecyclerView
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/srf_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-    </com.hdit.wldemo.widget.MyRecyclerView>
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/gry">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <LinearLayout
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/orange"
+                        android:textSize="20sp"
+                        android:text="@string/item_proscenium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/proscenium_createTime"
+                        android:text="创建时间:2016-11-14 11:00"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <!--<include layout="@layout/item_prosceniun"/>-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/proscenium_recycler"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <LinearLayout
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/orange"
+                        android:textSize="20sp"
+                        android:text="@string/item_counselor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="创建时间:2016-11-14 11:00"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:background="@color/white"
+                    android:id="@+id/counselor_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                <include layout="@layout/item_counselor_order"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <include layout="@layout/item_medical_order"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <LinearLayout
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/orange"
+                        android:textSize="20sp"
+                        android:text="@string/item_revisit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="创建时间:2016-11-14 11:00"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/feedback_recycle"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </com.cjj.MaterialRefreshLayout>
+    <TextView
+        android:id="@+id/tv_none"
+        android:visibility="gone"
+        android:background="@color/gry"
+        android:text="暂无订单"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

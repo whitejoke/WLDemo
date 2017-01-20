@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
+        android:cropToPadding="true"
+        android:fitsSystemWindows="true"
         android:background="@mipmap/mine_background"
         android:orientation="vertical"
         android:layout_width="match_parent"
